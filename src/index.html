@@ -1,4 +1,117 @@
-<!DOCTYPE html>
+<!DOCTYPE html>  
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Data Lovers-Pokémon</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+ 
+    <section class="firstContainer"> 
+      <header>
+        <nav>
+          <img class = "help" scr = "img/navigation/help.png">
+          <img class="configuration" scr="img/navigation/configuration.png">
+        </nav>
+      </header> 
+      <main>
+      <h2> Welcome </h2>
+      <img class=logo src="img/logo.png">
+      <p> The best page to know about pokémons </p>
+      <button id="pokedex" class="pokedex" onclick=""></button>
+      <button id="ranking" class="ranking" onclick=""></button>
+    </section>
+   
+
+    <section class="secondContainer">
+        <div>
+          <label for="typeFilter"> Type </label>
+          <select id="typeFilter" >
+            <option value="all">All</option>
+            <option value="bug">Bug</option>
+            <option value="dark">Dark</option>
+            <option value="dragon"> Dragon</option>
+            <option value="electric">Electric</option>
+            <option value="fairy">Fairy</option>
+            <option value="fighting">Fighting</option>
+            <option value="fire">Fire</option>
+            <option value="flying">Flying</option>
+            <option value="ghost">Ghost</option>
+            <option value="grass">Grass</option>
+            <option value="ground">Ground</option>
+            <option value="ice">Ice</option>
+            <option value="normal">Normal</option>
+            <option value="poison">Poison</option>
+            <option value="psychic">Psychic</option>
+            <option value="rock">Rock</option>
+            <option value="steel">Steel</option>
+            <option value="water"> Water</option>
+          </select>
+        </div>
+        
+
+        <div>
+          <label for="
+          otherFilters"> Order by</label>
+          <select id="
+          otherFilters">
+          <option value="name">Name A-Z</option>
+            <option value="num">Num</option>
+            <option value="cp">CP(Combat points)</option>
+            <option value="hp">HP(Health points)</option>
+          </select>
+        </div>
+
+
+
+        <div class="search">
+          <div>
+            <input type="search" id="search" class="search " placeholder="search by name" autocomplete="off" spellcheck="false"/>
+            <img src="search.png">
+          </div>
+
+    </section>
+    
+
+   
+
+
+    <div class="pokemones-quantity">
+     <p class="pokemones">Pokemones( <spam id="quantity"></spam> )</p>
+      <div class="btn-order"></div>
+      </div>
+      <div id="container-card"></div>
+      <div class="container-modal"></div>
+      <div class="container-btn-top">
+        <img src="img/top.png" class="btn-top">
+      </div>
+
+
+    </section>
+    
+  </main>
+
+  <footer>
+    <div class="copyright">
+      <h3 class="bold comun">© Copyright by Brighit Quisuruco-Paola Tovar</h3>
+      <p>This prototype is intended as a guide for  </p>
+    </div>
+    <div class="group">
+      <h3 class="bold comun">Developer Team </h3>
+    </div>
+    <div class="apps comun">
+      <a href="https://play.google.com/store/apps/details?id=com.nianticlabs.pokemongo"><img src="img/google-app.png" alt="Google Play" /></a>
+      <a href="https://apps.apple.com/es/app/pokemon-go/id1094591345"><img src="img/AppStore.png" alt="App Store" /></a>
+    </div>     
+</footer>
+
+
+    <script src="main.js" type="module"></script>
+  </body>
+</html>
+
+
+<!--<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -9,4 +122,4 @@
     <div id="root"></div>
     <script src="main.js" type="module"></script>
   </body>
-</html>
+</html>-->
