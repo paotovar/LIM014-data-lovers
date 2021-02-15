@@ -10,9 +10,9 @@ import {
     searchPokemonByName,
     order,
     changeOrder,
-  /*  calculateStab,
+   calculateStab,
     calculateDps,
-    calculateEps,*/
+    calculateEps,
 } from './data.js';
 
 /*console.log(example, data);*/
@@ -23,10 +23,13 @@ const secondScreen = document.getElementById('secondScreen');
 //Boton para mostrar pokemones
 const btnMostrar = document.getElementById('btnMostrar');
 btnMostrar.addEventListener('click', () => {
+  /*Esta propiedad es útil para agregar, 
+  eliminar y alternar clases CSS en un elemento.
+ La propiedad classList es de solo lectura, sin embargo, 
+ puede modificarla usando los métodos add () y remove ().*/
   firstScreen.classList.add('hide');
   secondScreen.classList.remove('hide');
 });
-
 
 /*const pokemonList = data.pokemon;
 const contentList = document.querySelector('#contentList');
@@ -43,11 +46,15 @@ const orderBy = document.querySelector('#order-by');
 const inputSearch = document.getElementById('search');
 const btnAll = document.querySelector('.all-pokemon');
 const btnOrder = document.querySelector('.btn-order');
-let btnSort = false;
+let btnSort = false;/*---falta---*/
 
 const TypePokemon = (arrayType) => {
   let imgEachPokemon = '';
-  arrayType.forEach((typeElement) => {
+  arrayType.forEach((typeElement) => {/*forEach() ejecuta la función 
+    callback una vez por cada elemento presente en el array en orden ascendente.
+    arr.forEach(function callback(currentValue(elemento), index(indice), array) {
+    // tu iterador
+}[, thisArg]);*/
     imgEachPokemon += `<img src="img/icon-type/${typeElement}.png" alt=" type pokemon"/>`;
   });
   return imgEachPokemon;
@@ -67,19 +74,26 @@ const weaknesses = (arrayType) => {
   return imgEachPokemon;
 };
 const obtainNames = (attack) => {
-  const names = attack.map(name => name.name);
+  const names = attack.map(name => name.name);/*map() crea un nuevo array
+   con los resultados de la llamada a la función indicada aplicados a cada
+    uno de sus elementos.
+    var nuevo_array = arr.map(function callback(currentValue, index, array) {
+    // Elemento devuelto de nuevo_array
+}[, thisArg]) */
   return names;
 };
 const showsAttacks = (arrayAtacks) => {
   let stabEachPokemon = '';
   arrayAtacks.forEach((nuevo) => {
-    stabEachPokemon += `<p class="comun-attack">${nuevo}</p>`;
+    stabEachPokemon += `<p class="comun-attack">${nuevo}</p>`;/*--falta */
   });
   return stabEachPokemon;
 };
 
 const showModal = (pokemon) => {
-  const modal = document.createElement('div');
+  const modal = document.createElement('div');/*El método createElement ()
+   crea un nodo de elemento
+   con el nombre especificado.*/
   modal.classList.add('modal');
   modal.innerHTML = `<div class="modal-flex"> 
                       <div class="container-modal ${pokemon.type[0]} comun-card">
@@ -150,7 +164,7 @@ const showModal = (pokemon) => {
                           </div>
                       </div>
                     </div>`;
-  document.querySelector('.container-modal').appendChild(modal);
+  document.querySelector('.container-modal').appendChild(modal);/*---falta */
 
   modal.style.display = 'block';
   modal.querySelector('.close').addEventListener('click', () => {
@@ -162,7 +176,7 @@ const showModal = (pokemon) => {
     if (evento.target === modalFlex) {
       modal.classList.remove('modal');
       containerModal.innerHTML = '';
-    }
+    }/*---falta */
   });
   return modal;
 };
@@ -174,7 +188,7 @@ const showPokemon = (list) => {
     const card = document.createElement('div');
     card.className = 'pokemon-group';
     card.innerHTML = `
-      <div class="poke-img">
+      <div class="poke-img">,
         <p class="poke-num">${pokem.num}</p>
         <img src="${pokem.img}">
       </div>
@@ -207,13 +221,14 @@ elementTypeFilter.addEventListener('change', () => {
     containerPokemons.innerHTML = '';
     showPokemon(pokemonList);
   } else {
-    const catchFilter = filterByType(pokemonList, elementTypeFilter.value);
+    const catchFilter = filterByType(pokemonList, elementTypeFilter.value);/*chapa el valor del 
+    array de data */
     containerPokemons.innerHTML = '';
     showPokemon(catchFilter);
   }
 });
 
-// Historia 4: buscar pokemon por nombre
+// Historia 4: buscar pokemon por nombre  /*Containerpokemons es un div ubicado en index.html */
 const MessageError = () => {
   containerPokemons.innerHTML = '';
   const div = document.createElement('div');
@@ -229,6 +244,7 @@ const MessageError = () => {
 
 inputSearch.addEventListener('input', () => {
   const pokemones = searchPokemonByName(pokemonList, inputSearch.value);
+  /*Llama a un array de data  */
   if (pokemones.length === 0) {
     MessageError();
     document.getElementById('quantity').innerHTML = 0;
@@ -239,7 +255,7 @@ inputSearch.addEventListener('input', () => {
 });
 
 // Historia 5: Ordenar alfabeticamente
-btnOrder.addEventListener('click', () => {
+btnOrder.addEventListener('click', () => {/*botoncillo del html aparece de al A-Z */
   if (btnSort === false) {
     containerPokemons.innerHTML = '';
     btnOrder.classList.replace('btn-order', 'btn-orderAsc');
@@ -252,10 +268,10 @@ btnOrder.addEventListener('click', () => {
     const descendente = changeOrder(order(pokemonList, 'a-z'));
     showPokemon(descendente);
   }
-  btnSort = !btnSort;
+  btnSort = !btnSort;//*entender */
 });
 // Historia 6,7,8: Ordenar por num, max-cp, max-hp
-orderBy.addEventListener('change', () => {
+orderBy.addEventListener('change', () => {/*llama al order by del html y al order del array  */
   switch (orderBy.value) {
     case 'num':
       containerPokemons.innerHTML = '';
@@ -276,17 +292,20 @@ orderBy.addEventListener('change', () => {
 });
 
 // Funcion Extra : boton para subir en pantalla
-window.onscroll = () => {
+window.onscroll = () => {/*El método Window.scroll() 
+  desplaza la ventana a un lugar particular en el documento.
+  window.scroll(x-coord, y-coord)
+window.scroll(options)*/
   if (document.documentElement.scrollTop > 100) {
     document.querySelector('.container-btn-top').classList.add('show');
   } else {
     document.querySelector('.container-btn-top').classList.remove('show');
   }
 };
-document.querySelector('.container-btn-top').addEventListener('click', () => {
+ds.addEventListener('click', () => {
   window.scrollTo({
     top: 0,
-    behavior: 'smooth',
+    behavior: 'smooth',/*---falta */
   });
 });
 

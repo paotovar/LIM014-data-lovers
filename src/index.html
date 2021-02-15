@@ -43,6 +43,7 @@
   <!-- SEGUNDA PANTALLA -->
   <div id="secondScreen" class="hide">
 
+
         <div class="title-pokemons">
           <h1>Universe of <span class="big">Pokémon</span></h1>
         </div>
@@ -57,12 +58,16 @@
                 <img src="img/icon-search.png">
               </div>
             </div>
-            <div class="menu-container comun bold">
+            <div class="menu-container comun bold"> <!--bold estilo grueso-->
               <button class="all-pokemon bold">Reset</button>
               <div>
                 <label for="element-type-filter"> Type </label>
                 <select id="element-type-filter" >
-                  <option value="all">All</option>
+                  <option value="all">All</option><!--El contenido entre las etiquetas
+                     de apertura <option>y cierre </option>es lo que mostrarán los 
+                     navegadores en una lista desplegable. Sin embargo, el valor del 
+                     valueatributo es lo que se enviará al servidor cuando se envíe 
+                     un formulario.-->
                   <option value="bug">Bug</option>
                   <option value="dark">Dark</option>
                   <option value="dragon"> Dragon</option>
@@ -94,7 +99,8 @@
             </div>
             <div class="pokemones-quantity">
                 <p class="pokemones">Pokemones( <spam id="quantity"></spam> )</p>
-            <div class="btn-order"></div>
+                <!--spam el id contar los pokemon encontrados-->
+            <div class="btn-order"></div><!-- -->
             </div>
             <div id="container-card"></div>
             <div class="container-modal"></div>

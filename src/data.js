@@ -41,7 +41,7 @@ export const order = (arrayObj, orderBy) => {
 export const changeOrder = array => array.reverse();
 
 
-/*
+
 export const calculateStab = (attack, tipoPokemon) => {
   const result = attack.map((obj) => {
     const damage = Number(obj['base-damage']);
@@ -76,4 +76,4 @@ export const calculateEps = (attack) => {
     return eps;
   });
   return result;
-};  */
+};  
