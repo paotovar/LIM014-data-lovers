@@ -1,10 +1,21 @@
+<<<<<<< HEAD
 /*import { example } from './data.js';
 
 import data from './data/pokemon/pokemon.js';*/
 
 
+=======
+//import { example } from './data.js';//
+// import data from './data/lol/lol.js';
+>>>>>>> bri
 import data from './data/pokemon/pokemon.js';
 
+<<<<<<< HEAD
+=======
+/*console.log(example, data);*/
+
+
+>>>>>>> bri
 import {
     filterByType,
     searchPokemonByName,
@@ -15,7 +26,11 @@ import {
     calculateEps,
 } from './data.js';
 
+<<<<<<< HEAD
 /*console.log(example, data);*/
+=======
+/console.log(example, data);/
+>>>>>>> bri
 
 const firstScreen = document.getElementById('firstScreen');
 const secondScreen = document.getElementById('secondScreen');
@@ -23,14 +38,21 @@ const secondScreen = document.getElementById('secondScreen');
 //Boton para mostrar pokemones
 const btnMostrar = document.getElementById('btnMostrar');
 btnMostrar.addEventListener('click', () => {
+<<<<<<< HEAD
   /*Esta propiedad es útil para agregar, 
   eliminar y alternar clases CSS en un elemento.
  La propiedad classList es de solo lectura, sin embargo, 
  puede modificarla usando los métodos add () y remove ().*/
+=======
+>>>>>>> bri
   firstScreen.classList.add('hide');
   secondScreen.classList.remove('hide');
 });
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> bri
 /*const pokemonList = data.pokemon;
 const contentList = document.querySelector('#contentList');
 
@@ -46,6 +68,7 @@ const orderBy = document.querySelector('#order-by');
 const inputSearch = document.getElementById('search');
 const btnAll = document.querySelector('.all-pokemon');
 const btnOrder = document.querySelector('.btn-order');
+<<<<<<< HEAD
 let btnSort = false;/*---falta---*/
 
 const TypePokemon = (arrayType) => {
@@ -56,43 +79,71 @@ const TypePokemon = (arrayType) => {
     // tu iterador
 }[, thisArg]);*/
     imgEachPokemon += `<img src="img/icon-type/${typeElement}.png" alt=" type pokemon"/>`;
+=======
+let btnSort = false;//
+
+const TypePokemon = (arrayType) => {
+  let imgEachPokemon = '';
+  arrayType.forEach((typeElement) => {
+    imgEachPokemon += `<img src="img/pokemonType/${typeElement}.png" alt=" type pokemon"/>`;
+>>>>>>> bri
   });
   return imgEachPokemon;
 };
 const resistant = (arrayType) => {
   let imgEachPokemon = '';
   arrayType.forEach((resistantPokemon) => {
+<<<<<<< HEAD
     imgEachPokemon += `<img src="img/icon-type/${resistantPokemon}.png" alt="resistant"/>`;
+=======
+    imgEachPokemon += `<img src="img/pokemonType/${resistantPokemon}.png" alt="resistant"/>`;
+>>>>>>> bri
   });
   return imgEachPokemon;
 };
 const weaknesses = (arrayType) => {
   let imgEachPokemon = '';
   arrayType.forEach((weaknessesPokemon) => {
+<<<<<<< HEAD
     imgEachPokemon += `<img src="img/icon-type/${weaknessesPokemon}.png" alt="weaknesses"/>`;
+=======
+    imgEachPokemon += `<img src="img/pokemonType/${weaknessesPokemon}.png" alt="weaknesses"/>`;
+>>>>>>> bri
   });
   return imgEachPokemon;
 };
 const obtainNames = (attack) => {
+<<<<<<< HEAD
   const names = attack.map(name => name.name);/*map() crea un nuevo array
    con los resultados de la llamada a la función indicada aplicados a cada
     uno de sus elementos.
     var nuevo_array = arr.map(function callback(currentValue, index, array) {
     // Elemento devuelto de nuevo_array
 }[, thisArg]) */
+=======
+  const names = attack.map(name => name.name);
+>>>>>>> bri
   return names;
 };
 const showsAttacks = (arrayAtacks) => {
   let stabEachPokemon = '';
   arrayAtacks.forEach((nuevo) => {
+<<<<<<< HEAD
     stabEachPokemon += `<p class="comun-attack">${nuevo}</p>`;/*--falta */
+=======
+    stabEachPokemon += `<p class="comun-attack">${nuevo}</p>`;
+>>>>>>> bri
   });
   return stabEachPokemon;
 };
 
 const showModal = (pokemon) => {
+<<<<<<< HEAD
   const modal = document.createElement('div');/*El método createElement ()
    crea un nodo de elemento
+=======
+  const modal = document.createElement('div');/*El método createElement () crea un nodo de elemento
+>>>>>>> bri
    con el nombre especificado.*/
   modal.classList.add('modal');
   modal.innerHTML = `<div class="modal-flex"> 
@@ -164,7 +215,11 @@ const showModal = (pokemon) => {
                           </div>
                       </div>
                     </div>`;
+<<<<<<< HEAD
   document.querySelector('.container-modal').appendChild(modal);/*---falta */
+=======
+  document.querySelector('.container-modal').appendChild(modal);
+>>>>>>> bri
 
   modal.style.display = 'block';
   modal.querySelector('.close').addEventListener('click', () => {
@@ -176,7 +231,11 @@ const showModal = (pokemon) => {
     if (evento.target === modalFlex) {
       modal.classList.remove('modal');
       containerModal.innerHTML = '';
+<<<<<<< HEAD
     }/*---falta */
+=======
+    }
+>>>>>>> bri
   });
   return modal;
 };
@@ -188,7 +247,11 @@ const showPokemon = (list) => {
     const card = document.createElement('div');
     card.className = 'pokemon-group';
     card.innerHTML = `
+<<<<<<< HEAD
       <div class="poke-img">,
+=======
+      <div class="poke-img">
+>>>>>>> bri
         <p class="poke-num">${pokem.num}</p>
         <img src="${pokem.img}">
       </div>
@@ -221,14 +284,22 @@ elementTypeFilter.addEventListener('change', () => {
     containerPokemons.innerHTML = '';
     showPokemon(pokemonList);
   } else {
+<<<<<<< HEAD
     const catchFilter = filterByType(pokemonList, elementTypeFilter.value);/*chapa el valor del 
     array de data */
+=======
+    const catchFilter = filterByType(pokemonList, elementTypeFilter.value);
+>>>>>>> bri
     containerPokemons.innerHTML = '';
     showPokemon(catchFilter);
   }
 });
 
+<<<<<<< HEAD
 // Historia 4: buscar pokemon por nombre  /*Containerpokemons es un div ubicado en index.html */
+=======
+// Historia 4: buscar pokemon por nombre
+>>>>>>> bri
 const MessageError = () => {
   containerPokemons.innerHTML = '';
   const div = document.createElement('div');
@@ -244,7 +315,10 @@ const MessageError = () => {
 
 inputSearch.addEventListener('input', () => {
   const pokemones = searchPokemonByName(pokemonList, inputSearch.value);
+<<<<<<< HEAD
   /*Llama a un array de data  */
+=======
+>>>>>>> bri
   if (pokemones.length === 0) {
     MessageError();
     document.getElementById('quantity').innerHTML = 0;
@@ -255,7 +329,11 @@ inputSearch.addEventListener('input', () => {
 });
 
 // Historia 5: Ordenar alfabeticamente
+<<<<<<< HEAD
 btnOrder.addEventListener('click', () => {/*botoncillo del html aparece de al A-Z */
+=======
+btnOrder.addEventListener('click', () => {
+>>>>>>> bri
   if (btnSort === false) {
     containerPokemons.innerHTML = '';
     btnOrder.classList.replace('btn-order', 'btn-orderAsc');
@@ -271,7 +349,11 @@ btnOrder.addEventListener('click', () => {/*botoncillo del html aparece de al A-
   btnSort = !btnSort;//*entender */
 });
 // Historia 6,7,8: Ordenar por num, max-cp, max-hp
+<<<<<<< HEAD
 orderBy.addEventListener('change', () => {/*llama al order by del html y al order del array  */
+=======
+orderBy.addEventListener('change', () => {
+>>>>>>> bri
   switch (orderBy.value) {
     case 'num':
       containerPokemons.innerHTML = '';
@@ -292,16 +374,21 @@ orderBy.addEventListener('change', () => {/*llama al order by del html y al orde
 });
 
 // Funcion Extra : boton para subir en pantalla
+<<<<<<< HEAD
 window.onscroll = () => {/*El método Window.scroll() 
   desplaza la ventana a un lugar particular en el documento.
   window.scroll(x-coord, y-coord)
 window.scroll(options)*/
+=======
+window.onscroll = () => {
+>>>>>>> bri
   if (document.documentElement.scrollTop > 100) {
     document.querySelector('.container-btn-top').classList.add('show');
   } else {
     document.querySelector('.container-btn-top').classList.remove('show');
   }
 };
+<<<<<<< HEAD
 ds.addEventListener('click', () => {
   window.scrollTo({
     top: 0,
@@ -309,3 +396,70 @@ ds.addEventListener('click', () => {
   });
 });
 
+=======
+document.querySelector('.container-btn-top').addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth',
+  });
+});
+
+
+// SHOW POKEDEX PAGE //
+
+/*const showPokedex= document.getElementById('pokedex');
+showPokedex.addEventListener('click',()=>{
+    document.getElementById('firstScreen').style.display='none';
+    document.getElementById('secondScreen').style.display='block';
+});
+
+const showPokedex = document.getElementById('btnMostrar');
+showPokedex.addEventListener('click', () =>{
+  firstScreen.classList.add('hide');
+  secondScreen.classList.remove('hide')
+});
+
+/*
+import {
+  filterByType,
+} from './data.js';
+
+
+const pokemonList = data.pokemon;
+const containerPokemons = document.querySelector('#container-card');
+const elementTypeFilter = document.getElementById('element-type-filter');
+
+
+const TypePokemon = (arrayType) => {
+  let imgEachPokemon = '';
+  arrayType.forEach((typeElement) => {
+    imgEachPokemon += `<img src="img/icon-type/${typeElement}.png" alt=" type pokemon"/>`;
+  });
+  return imgEachPokemon;
+};
+const resistant = (arrayType) => {
+  let imgEachPokemon = '';
+  arrayType.forEach((resistantPokemon) => {
+    imgEachPokemon += `<img src="img/icon-type/${resistantPokemon}.png" alt="resistant"/>`;
+  });
+  return imgEachPokemon;
+};
+const weaknesses = (arrayType) => {
+  let imgEachPokemon = '';
+  arrayType.forEach((weaknessesPokemon) => {
+    imgEachPokemon += `<img src="img/icon-type/${weaknessesPokemon}.png" alt="weaknesses"/>`;
+  });
+  return imgEachPokemon;
+};
+const obtainNames = (attack) => {
+  const names = attack.map(name => name.name);
+  return names;
+};
+const showsAttacks = (arrayAtacks) => {
+  let stabEachPokemon = '';
+  arrayAtacks.forEach((nuevo) => {
+    stabEachPokemon += `<p class="comun-attack">${nuevo}</p>`;
+  });
+  return stabEachPokemon;
+}; */
+>>>>>>> bri

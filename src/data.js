@@ -1,4 +1,17 @@
 // estas funciones son de ejemplo
+<<<<<<< HEAD
+=======
+
+/*export const example = () => {
+  return 'example';
+};
+
+export const anotherExample = () => {
+  return 'OMG';
+};*/
+
+// estas funciones son de ejemplo
+>>>>>>> bri
 /*
 export const example = () => {
   return 'example';
@@ -76,4 +89,8 @@ export const calculateEps = (attack) => {
     return eps;
   });
   return result;
+<<<<<<< HEAD
 };  
+=======
+};
+>>>>>>> bri

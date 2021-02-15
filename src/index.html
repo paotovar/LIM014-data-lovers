@@ -6,46 +6,45 @@
     
     <link rel="stylesheet" href="style.css" />
   </head>
-   <!-- PRIMERA PANTALLA -->
-   <div id="firstScreen"  >
-    <header class="header-nav">
+  
+   
+  <header class="header-nav">
       <input type="checkbox" id="btn-menu">
-      <label for="btn-menu"><img src="img/icono.png" width="30px" height="30px" class="imgLolo"></label>
+      <label for="btn-menu"><img src="img/navegation/pokebola.png" width="30px" height="30px" class="imgLolo"></label>
         <nav class="menu"><!--modificar el cuadrito por la pokebola-->
           <ul>
-            <li><a href="index.html"><img src="img/logoPOK.png" alt="Logo" width="40px" height="40px"></a></li>
+            <li><a href="index.html"><img src="img/navegation/pokebola.png" alt="Logo" width="35px" height="35px"></a></li>
             <li><a href="https://www.pokemon.com/el/app/pokemon-go/">game</a></li>
             <li><a href="https://pokemaster.es/competitivo/conocimientos-generales/conceptos-basicos/vocabulario-competitivo/">list of terms</a></li>
             <li><a href="https://www.pokemon.com/el/noticias-pokemon/">news</a></li>
-            <li><a href="https://www.snaptubeapp.com/how-to-es/movies/pokemon-movie.html">movies</a></li>
-            
+            <li><a href="https://www.snaptubeapp.com/how-to-es/movies/pokemon-movie.html">movies</a></li>  
           </ul>
         </nav>
   </header>
+
+   <!-- First Screen -->
+  <div id="firstScreen"  >
   <section class="section">
     <div class="slider">
       <div class="slider-content">
-        <img src="img/logo-of-pokemon.png" class="pok" alt="" width="40px" height="40px">
-
-        
-        <button id="btnMostrar" class="btnMostrar">Meet the pokemon</button>
+        <img src="img/navegation/logo.png" class="pok" alt="" >
+        <button id="btnMostrar" class="btnMostrar">Meet the Pokemon</button>
       </div>
     </div>
   </section>
-  <footer class="footer">
+  <!--<footer class="footer">
     <nav class="feet">
       <a href="#">©Copyright 2021 by Brighit Quisuruco & Paola Tovar</a>
     </nav>
-  </footer>
+  </footer>-->
 </div>
 
 
-  <!-- SEGUNDA PANTALLA -->
+  <!-- Second Screen -->
   <div id="secondScreen" class="hide">
-
-
+    <div class="filterContainer"> 
         <div class="title-pokemons">
-          <h1>Universe of <span class="big">Pokémon</span></h1>
+          <h1>Pokemon´s Universe</h1>
         </div>
   
         <main>
@@ -55,19 +54,15 @@
             <div class="searcher">
               <div>
                 <input type="search" id="search" class="search comun" placeholder="search by name" autocomplete="off" spellcheck="false"/>
-                <img src="img/icon-search.png">
+                <img src="img/navegation/search.png">
               </div>
             </div>
-            <div class="menu-container comun bold"> <!--bold estilo grueso-->
+            <div class="menu-container comun bold">
               <button class="all-pokemon bold">Reset</button>
               <div>
                 <label for="element-type-filter"> Type </label>
                 <select id="element-type-filter" >
-                  <option value="all">All</option><!--El contenido entre las etiquetas
-                     de apertura <option>y cierre </option>es lo que mostrarán los 
-                     navegadores en una lista desplegable. Sin embargo, el valor del 
-                     valueatributo es lo que se enviará al servidor cuando se envíe 
-                     un formulario.-->
+                  <option value="all">All</option>
                   <option value="bug">Bug</option>
                   <option value="dark">Dark</option>
                   <option value="dragon"> Dragon</option>
@@ -98,31 +93,45 @@
               </div>
             </div>
             <div class="pokemones-quantity">
-                <p class="pokemones">Pokemones( <spam id="quantity"></spam> )</p>
-                <!--spam el id contar los pokemon encontrados-->
-            <div class="btn-order"></div><!-- -->
+                <p class="pokemones">There are( <spam id="quantity"></spam> )Pokemones</p>
+            <div class="btn-order"></div>
             </div>
+     </div>
+
             <div id="container-card"></div>
-            <div class="container-modal"></div>
+           <!--<div class="container-modal"></div>-->
             <div class="container-btn-top">
               <img src="img/top.png" class="btn-top">
             </div>
           </section>      
         </main>
-        <footer class="footer">
+      <!--<footer class="footer">
           <nav class="pie">
             <a href="#">©Copyright 2021 by Brighit Quisuruco & Paola Tovar</a>
           </nav>
-        </footer>
+        </footer>-->
       </div>
 
-
+      <footer>
+        <div class="copyright">
+          <h3 class="bold comun">© Copyright by Brighit Quisuruco Ft Paola Tovar - 2020</h3>
+          <p>This prototype is intended as a guide for current and new Pokémon Go players who want to be a Pokémon master</p>
+        </div> 
+    </footer>
 
   <script src="main.js" type="module"></script>
   </body>
 </html>
 
-  
-
-
- 
+<!--<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Data Lovers</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="main.js" type="module"></script>
+  </body>
+</html>-->
