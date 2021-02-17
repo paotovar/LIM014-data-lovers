@@ -19,8 +19,8 @@ export const searchPokemonByName = (arrayObj, input) => {
   return pokemon;/*string.startsWith(searchvalue, start) */
 };
 export const order = (arrayObj, orderBy) => {
-  let sortObj = [];
-  switch/*la declaración switch evalúa una expreción */ (orderBy) {
+  let sortObj = [];/*la declaración switch evalúa una expresión */
+  switch (orderBy) {
     case 'a-z':
       sortObj = arrayObj.sort((a, b) => ((a.name <= b.name) ? -1 : 1));
       break;
