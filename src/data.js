@@ -1,17 +1,4 @@
 // estas funciones son de ejemplo
-<<<<<<< HEAD
-=======
-
-/*export const example = () => {
-  return 'example';
-};
-
-export const anotherExample = () => {
-  return 'OMG';
-};*/
-
-// estas funciones son de ejemplo
->>>>>>> bri
 /*
 export const example = () => {
   return 'example';
@@ -33,7 +20,7 @@ export const searchPokemonByName = (arrayObj, input) => {
 };
 export const order = (arrayObj, orderBy) => {
   let sortObj = [];
-  switch (orderBy) {
+  switch/*la declaración switch evalúa una expreción */ (orderBy) {
     case 'a-z':
       sortObj = arrayObj.sort((a, b) => ((a.name <= b.name) ? -1 : 1));
       break;
@@ -41,7 +28,7 @@ export const order = (arrayObj, orderBy) => {
       sortObj = arrayObj.sort((a, b) => a.stats['max-cp'] - b.stats['max-cp']);
       break;
     case 'max-hp':
-      sortObj = arrayObj.sort((a, b) => a.stats['max-hp'] - b.stats['max-hp']);
+      sortObj = arrayObj.sort((a, b) => b.stats['max-hp'] - a.stats['max-hp']);
       break;
     case 'num':
       sortObj = arrayObj.sort((a, b) => a.num - b.num);
@@ -89,8 +76,4 @@ export const calculateEps = (attack) => {
     return eps;
   });
   return result;
-<<<<<<< HEAD
 };  
-=======
-};
->>>>>>> bri

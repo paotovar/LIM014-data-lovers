@@ -1,6 +1,8 @@
 <!DOCTYPE html>  
 <html>
   <head>
+    <link rel="stylesheet" 
+    href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" crossorigin="anonymous">
     <meta charset="utf-8">
     <title>Data Lovers-Pokémon</title>
     
@@ -10,14 +12,21 @@
    
   <header class="header-nav">
       <input type="checkbox" id="btn-menu">
-      <label for="btn-menu"><img src="img/navegation/pokebola.png" width="30px" height="30px" class="imgLolo"></label>
+      <label for="btn-menu"><img src="img/navigation/pokebola.png" width="30px" height="30px" class="imgLolo"></label>
         <nav class="menu"><!--modificar el cuadrito por la pokebola-->
           <ul>
-            <li><a href="index.html"><img src="img/navegation/pokebola.png" alt="Logo" width="35px" height="35px"></a></li>
-            <li><a href="https://www.pokemon.com/el/app/pokemon-go/">game</a></li>
-            <li><a href="https://pokemaster.es/competitivo/conocimientos-generales/conceptos-basicos/vocabulario-competitivo/">list of terms</a></li>
-            <li><a href="https://www.pokemon.com/el/noticias-pokemon/">news</a></li>
-            <li><a href="https://www.snaptubeapp.com/how-to-es/movies/pokemon-movie.html">movies</a></li>  
+            <li><a href="index.html">
+            <img src="img/navigation/pokebola.png" alt="Logo" width="35px" height="35px"></a></li>
+            
+            <!--<li><a href="https://www.pokemon.com/el/app/pokemon-go/">game</a></li>-->
+            <li><a href="https://www.pokemon.com/el/app/pokemon-go/" target="_blank">game</a></li>
+
+            <li><a href="https://pokemaster.es/competitivo/conocimientos-generales/conceptos-basicos/vocabulario-competitivo/" target="_blank">list of terms</a></li>
+
+            <li><a href="https://www.pokemon.com/el/noticias-pokemon/" target="_blank">news</a></li>
+                         
+            <li><a href="https://www.snaptubeapp.com/how-to-es/movies/pokemon-movie.html" target="_blank">movies</a></li>
+
           </ul>
         </nav>
   </header>
@@ -27,7 +36,7 @@
   <section class="section">
     <div class="slider">
       <div class="slider-content">
-        <img src="img/navegation/logo.png" class="pok" alt="" >
+        <img src="img/navigation/logo.png" class="pok" alt="" >
         <button id="btnMostrar" class="btnMostrar">Meet the Pokemon</button>
       </div>
     </div>
@@ -54,14 +63,15 @@
             <div class="searcher">
               <div>
                 <input type="search" id="search" class="search comun" placeholder="search by name" autocomplete="off" spellcheck="false"/>
-                <img src="img/navegation/search.png">
+                <img src="img/navigation/search.png">
               </div>
             </div>
             <div class="menu-container comun bold">
               <button class="all-pokemon bold">Reset</button>
               <div>
                 <label for="element-type-filter"> Type </label>
-                <select id="element-type-filter" >
+                <select id="element-type-filter" ><!--select se utiliza para crear
+                   un desplegable option opciones disponibles-->
                   <option value="all">All</option>
                   <option value="bug">Bug</option>
                   <option value="dark">Dark</option>
@@ -93,15 +103,15 @@
               </div>
             </div>
             <div class="pokemones-quantity">
-                <p class="pokemones">There are( <spam id="quantity"></spam> )Pokemones</p>
+                <p class="pokemones">There are( <spam id="quantity"></spam> )Pokemones</p><!--FALTA-->
             <div class="btn-order"></div>
             </div>
      </div>
 
             <div id="container-card"></div>
-           <!--<div class="container-modal"></div>-->
+           <div class="container-modal"></div>
             <div class="container-btn-top">
-              <img src="img/top.png" class="btn-top">
+              <img src="img/top.gif" class="btn-top">
             </div>
           </section>      
         </main>
@@ -114,7 +124,7 @@
 
       <footer>
         <div class="copyright">
-          <h3 class="bold comun">© Copyright by Brighit Quisuruco Ft Paola Tovar - 2020</h3>
+          <h3 class="bold comun">© Copyright by Brighit Quisuruco Ft Paola Tovar - 2021</h3>
           <p>This prototype is intended as a guide for current and new Pokémon Go players who want to be a Pokémon master</p>
         </div> 
     </footer>
