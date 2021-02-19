@@ -28,7 +28,7 @@ export const order = (arrayObj, orderBy) => {
       sortObj = arrayObj.sort((a, b) => a.stats['max-cp'] - b.stats['max-cp']);
       break;
     case 'max-hp':
-      sortObj = arrayObj.sort((a, b) => b.stats['max-hp'] - a.stats['max-hp']);
+      sortObj = arrayObj.sort((a, b) => a.stats['max-hp'] - b.stats['max-hp']);
       break;
     case 'num':
       sortObj = arrayObj.sort((a, b) => a.num - b.num);

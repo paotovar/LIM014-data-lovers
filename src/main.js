@@ -50,7 +50,7 @@ const orderBy = document.querySelector('#order-by');
 const inputSearch = document.getElementById('search');
 const btnAll = document.querySelector('.all-pokemon');
 const btnOrder = document.querySelector('.btn-order');
-let btnSort = false;/*---falta---*/
+let btnSort = false;
 
 const TypePokemon = (arrayType) => {
   let imgEachPokemon = '';
@@ -275,7 +275,7 @@ btnOrder.addEventListener('click', () => {/*botoncillo del html aparece de al A-
     const descendente = changeOrder(order(pokemonList, 'a-z'));
     showPokemon(descendente);
   }
-  btnSort = !btnSort;//*entender */
+  btnSort = !btnSort;
 });
 // Historia 6,7,8: Ordenar por num, max-cp, max-hp
 orderBy.addEventListener('change', () => {/*llama al metodo de order by de la data  */
