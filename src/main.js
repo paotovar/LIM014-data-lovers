@@ -195,7 +195,7 @@ const showPokemon = (list) => {
     const card = document.createElement('div');
     card.className = 'pokemon-group';
     card.innerHTML = `
-      <div class="poke-img">,
+      <div class="poke-img">
         <p class="poke-num">${pokem.num}</p>
         <img src="${pokem.img}">
       </div>
