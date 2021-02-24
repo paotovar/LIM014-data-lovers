@@ -84,6 +84,7 @@ const obtainNames = (attack) => {
     var nuevo_array = arr.map(function callback(elemento actual, indice, array) {
     // Elemento devuelto de nuevo_array
 }[, thisArg]) */
+
   return names;
 };
 const showsAttacks = (arrayAtacks) => {
@@ -100,7 +101,7 @@ const showModal = (pokemon) => {
    con el nombre especificado.*/
   modal.classList.add('modal');
   modal.innerHTML = `<div class="modal-flex"> 
-                      <div class="container-modal ${pokemon.type[0]} comun-card">
+                     <div class="container-modal ${pokemon.type[0]} comun-card"><!--falta-->
                           <i class="close fas fa-times-circle"></i>
                           <div class="img-modal"><img src="${pokemon.img}"></div>
                           <div class="modal-info">
@@ -161,7 +162,7 @@ const showModal = (pokemon) => {
                             </div>
                             <div class="quick-move">
                               <div>${showsAttacks(obtainNames(pokemon['special-attack']))}</div>
-                              <div>${showsAttacks(calculateStab(pokemon['special-attack'], pokemon.type))}</div>
+                              <div>${showsAttacks(calculateStab(pokemon['special-attack'], pokemon.type))}</div><!--f-->
                               <div>${showsAttacks(calculateDps(pokemon['special-attack'], pokemon.type))}</div>
                               <div>${showsAttacks(calculateEps(pokemon['special-attack']))}</div>
                             </div>
@@ -181,9 +182,9 @@ const showModal = (pokemon) => {
       el elemento sobre el cual se hizo click 
       si se asocia el evento a "contenedor" o "elemento padre" el this corresponde al mismo,
        mientras event.target corresponde al elemento hijo donde se produjo el click (en el caso del ejemplo el <span></span>).*/ 
-      modal.classList.remove('modal');
+    modal.classList.remove('modal');
       containerModal.innerHTML = '';
-    }/*---falta */
+    }
   });
   return modal;
 };
@@ -195,7 +196,7 @@ const showPokemon = (list) => {
     const card = document.createElement('div');
     card.className = 'pokemon-group';
     card.innerHTML = `
-      <div class="poke-img">,
+      <div class="poke-img">
         <p class="poke-num">${pokem.num}</p>
         <img src="${pokem.img}">
       </div>
@@ -312,7 +313,7 @@ window.scroll(options)*/
 document.addEventListener('click', () => {
   window.scrollTo({
     top: 0,
-    behavior: 'smooth',/*---falta */
+    behavior: 'smooth',
   });
 });
 
