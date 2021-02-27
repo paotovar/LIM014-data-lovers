@@ -210,9 +210,7 @@ footer{
     padding: 0em 0.5em;
 }
 
-.etiqueta{
-  color:white;
-}
+
 /* ---------------Estilos conteo----------------- */
 @media( max-width: 500px ){
   .bannerBox{/*contenedor de card*/
@@ -226,15 +224,18 @@ footer{
  grid-template-columns: 20% 20% 20% 20% 20%;
  padding-top: 2.5% ;
  padding-bottom: 2.5%;
- background-position: center;
+ /*background-position: center;*/
  }
 
  .bannerBox div{
    background-color: white;
-   border-radius: 0.1em;
+   /*background-position: center;*/
+   border-radius: 0.4em;
    height: 1.8em;
    margin-left: 2em;
    margin-right: 2em;
+   padding-top: 0.23em;
+   
  }
  /*boton RESET*/
 .all-pokemon{
@@ -255,7 +256,16 @@ footer{
   transition: background-color 0.5s ease-out;
 }
 
+.menu-container.comun.bold{
+  background-color: black;
+}
 
+.etiqueta{
+  color: black;
+  margin: .0.8em;
+  background-position:bottom;
+  
+}
 .pokemones-quantity{ 
   background-color: black;
   text-align: center;
@@ -300,28 +310,26 @@ footer{
   background-color: transparent;
   border-radius: 0;
   border: solid 0;
-  
-  
+  display: inline-flex;
 }
-/*.searcher div{
-  
-  border-radius: 10%;
-  display:grid;
-  grid-template-columns: 80% 15%;
-  justify-content: center;
-  background-position: center;
-}*/
 
 .searcher img{
   width: 10%;
   margin: auto;
   background-color: white;
+  background-position: center;
   
 }
 .search {
   font-family: 'Lato', sans-serif;
-  
 }
+
+select{
+background-position: right;
+margin-left: 2em ;
+}
+
+
 
 @media( max-width: 500px ){
   #container-pokemon{/*contenedor de card*/
