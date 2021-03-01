@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
 
-/GENERAL FONT/
+/*GENERAL FONT*/
 *{
   margin: 0px;
   padding: 0px;
-  box-sizing: border-box; /debe calcular el ancho y alto total de un elemento-/
+  box-sizing: border-box; /*debe calcular el ancho y alto total de un elemento*/
   text-decoration: none;
   font-family: 'Ranchers', cursive;
 }
 
-/Hamburguesa/   
+/*Hamburguesa*/   
     header{
     width:100%;
     background:#e41616;
@@ -19,8 +19,8 @@
     display:none;
     }
        
-    header label{ /caja del menu/
-    display:none;/no se utilizará en pantallas grandes/
+    header label{ /*caja del menu*/
+    display:none;/*no se utilizará en pantallas grandes*/
     width: 35px;
     height: 35px;
     border-right:1px solid rgb(255, 255, 255);
@@ -30,24 +30,24 @@
      }
 
     
-    header label:hover{ /cja del menu pokebola/
+    header label:hover{ /*caja del menu pokebola*/
     cursor:pointer;
     background:rgb(228, 228, 228);
     border-right: 1px solid #ffffff;
     }
     
-    /haremos nuestro menu de navegacion/
+    /*haremos nuestro menu de navegacion*/
     .elements-nav ul{
-    list-style:none;/quitarle los estilos de lista/
-    display:flex;/hace que los li sean cajas flexibles los coloue en una fila/
+    list-style:none;/*quitarle los estilos de lista*/
+    display:flex;/*hace que los li sean cajas flexibles los coloue en una fila*/
     /*por defecto flex-direction:row;
     justify.content:center;*/
     }
     
-    .elements-nav li{ /formto de las  cajas de navegación/ 
+    .elements-nav li{ /*formto de las  cajas de navegación*/ 
     border-right:1px solid #fff;
     text-align:center;
-    flex-grow:1; /definir la proporcion de crecimiento/
+    flex-grow:1; /*definir la proporcion de crecimiento*/
     
   }
     
@@ -57,7 +57,7 @@
     font-family:fantasy;
         }
     
-    .elements-nav li a{ /texto del navegador/
+    .elements-nav li a{ /*texto del navegador*/
     display:block;
     padding:15px 20px;/* ar ab izq der*/
     color:rgb(255, 255, 255);
@@ -68,18 +68,18 @@
     .elements-nav li a:hover{
       color:rgb(0, 0, 0);
       }
-    /boton menu desplegable/  
+    /*boton menu desplegable*/  
     @media(max-width:500px){
     header label{
     display:block;
     }
     
-    .elements-nav{ /formao de las cajas del menú hamburguesa/
+    .elements-nav{ /*formao de las cajas del menú hamburguesa*/
     position:absolute;
     background:#e41616;
     width:50%;
-    margin-left: -70%;/se ocultará se verá a la izq/
-    transition: all 0.5s;/tiempo que demora en aparecer/
+    margin-left: -70%;/*se ocultará se verá a la izq*/
+    transition: all 0.5s;/*tiempo que demora en aparecer*/
     }
     
     .elements-nav ul{
@@ -95,12 +95,12 @@
     
     }
     }
- /Hamburguesa/    
+ /*Hamburguesa*/    
 
- /GENERAL SCREEN/
+ /*GENERAL SCREEN*/
  .section{
    display: flex; /*permite */
-   flex-flow: row wrap; /abrev direction y wrap-ajustarse/
+   flex-flow: row wrap; /*abrev direction y wrap-ajustarse*/
    background: transparent;
  }
    .slider{
@@ -165,7 +165,7 @@
    }
    
  
-   /HIDE FIST SCREEN/
+   /*HIDE FIST SCREEN*/
 .hide{
     display: none;
 }
@@ -182,7 +182,7 @@ footer{
    
 }
 
-/Second screen tittle/
+/*Second screen tittle*/
 .title-pokemons{
     margin:auto;
     background-color: rgb(3, 3, 3);
@@ -213,23 +213,23 @@ footer{
 
 /* ---------------Estilos conteo----------------- */
 @media( max-width: 500px ){
-  .bannerBox{/contenedor de card/
+  .bannerBox{/*contenedor de card*/
       max-width: 450px;
   }
 }
-/caja de filtros/
+/*caja de filtros*/
 .bannerBox{
  display:grid;
  background-color: black;
  grid-template-columns: 20% 20% 20% 20% 20%;
  padding-top: 2.5% ;
  padding-bottom: 2.5%;
- /background-position: center;/
+ /*background-position: center;*/
  }
 
  .bannerBox div{
    background-color: white;
-   /background-position: center;/
+   /*background-position: center;*/
    border-radius: 0.4em;
    height: 1.8em;
    margin-left: 2em;
@@ -237,10 +237,10 @@ footer{
    padding-top: 0.23em;
    
  }
- /boton RESET/
+ /*boton RESET*/
 .all-pokemon{
   font-family: 'Lato', sans-serif;
- /border: none;/
+ /*border: none;*/
   background-color:  #f5f107;
   border-radius: 0.8em;
   border:2px solid;
@@ -283,7 +283,7 @@ footer{
 }
 
 
-/-----boton de orden alfabetico----/
+/*-----boton de orden alfabetico----*/
 .btn-order{
     background-image: url('img/navigation/desc.jpg');
     background-repeat:no-repeat;
@@ -304,7 +304,7 @@ footer{
   }
 
 
-/boton de busqueda/
+/*boton de busqueda*/
 
 #search.search.comun{
   background-color: transparent;
@@ -332,13 +332,13 @@ margin-left: 2em ;
 
 
 @media( max-width: 500px ){
-  #container-pokemon{/contenedor de card/
+  #container-pokemon{/*contenedor de card*/
       max-width: 450px;
   }
 }
 
 /* ---------------Estilos Card pokemon----------------- */
-#container-card{ /contenedor de card/
+#container-card{ /*contenedor de card*/
   margin-left: auto;
   margin-right:auto; 
   max-width:1100px ;
@@ -597,7 +597,7 @@ box-shadow: 0 0 6px 0 rgba(0, 0, 0, .4);
 /* ---------------Fin estilos Card pokemon----------------- */
 
 @media( max-width: 768px ){
-  #container-pokemon{/contenedor de card/
+  #container-pokemon{/*contenedor de card*/
       max-width: 650px;
   }
 
