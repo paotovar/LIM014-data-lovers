@@ -60,6 +60,7 @@ const TypePokemon = (arrayType) => {
     // tu iterador
 }[, thisArg]);*/
     imgEachPokemon += `<img src="img/pokemonType/${typeElement}.png" alt=" type pokemon"/>`;
+    
   });
   return imgEachPokemon;
 };
@@ -67,6 +68,7 @@ const resistant = (arrayType) => {
   let imgEachPokemon = '';
   arrayType.forEach((resistantPokemon) => {
     imgEachPokemon += `<img src="img/pokemonType/${resistantPokemon}.png" alt="resistant"/>`;
+   /* console.log(resistantPokemon);*/
   });
   return imgEachPokemon;
 };
@@ -90,8 +92,10 @@ const obtainNames = (attack) => {
 const showsAttacks = (arrayAtacks) => {
   let stabEachPokemon = '';
   arrayAtacks.forEach((nuevo) => {
-    stabEachPokemon += `<p class="comun-attack">${nuevo}</p>`;/*--falta */
+    stabEachPokemon += `<p class="comun-attack">${nuevo}</p>`;
+    
   });
+  console.log(stabEachPokemon);
   return stabEachPokemon;
 };
 
@@ -101,7 +105,7 @@ const showModal = (pokemon) => {
    con el nombre especificado.*/
   modal.classList.add('modal');
   modal.innerHTML = `<div class="modal-flex"> 
-                     <div class="container-modal ${pokemon.type[0]} comun-card"><!--falta-->
+                     <div class="container-modal  comun-card">
                           <i class="close fas fa-times-circle"></i>
                           <div class="img-modal"><img src="${pokemon.img}"></div>
                           <div class="modal-info">
@@ -133,7 +137,7 @@ const showModal = (pokemon) => {
                             <div class="resist-weakne">
                               <div class="comun-modal comun bold">
                                 <p>Resistant</p>
-                                <div class="resistant">${resistant(pokemon.resistant)}</div>
+                               <div class="resistant">${resistant(pokemon.resistant)}</div>
                               </div>
                               <div class="comun-modal comun bold">
                                 <p>Weaknesses</p>
@@ -169,7 +173,7 @@ const showModal = (pokemon) => {
                           </div>
                       </div>
                     </div>`;
-  document.querySelector('.container-modal').appendChild(modal);/*---falta */
+  document.querySelector('.container-modal').appendChild(modal);
 
   modal.style.display = 'block';
   modal.querySelector('.close').addEventListener('click', () => {
