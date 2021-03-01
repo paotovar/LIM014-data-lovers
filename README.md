@@ -1,6 +1,5 @@
 
-
-  ![Imagen Logo](./src/img/Pokemon-Logo.jpg)
+  ![Imagen Logo](./src/img/pokemonLogo.jpg)
 # Data Lovers
 
 ## Índice
