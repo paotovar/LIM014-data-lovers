@@ -16,8 +16,8 @@ Para el proyecto se opto por un estilo que nuestra página se asemeje a una poke
 
 
 ### 2.2 Vista Final de nuestro proyecto
-  ![Imagen final desktop](./src/img/imgREADME/pokemonLogo.jpg)
-  ![Imagen final mobile](./src/img/imgREADME/pokemonLogo.jpg)  
+  ![Imagen final mobile](./src/img/imgREADME/figmaMobile.jpg)
+  ![Imagen final desktop](./src/img/imgREADME/figmaDesktop.jpg)  
 
 # 3.Diseño UX  
 
