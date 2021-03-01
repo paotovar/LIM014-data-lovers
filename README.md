@@ -2,11 +2,11 @@
   ![Imagen Logo](./src/img/imgREADME/pokemonLogo.jpg)
 # Data Lovers
 
-## 1. Resumen
+## 1. Resumen del proyecto
 
 Este proyecto tiene como finalidad construir una página web , en la cual va interactuar con una base de datos externa, la misma que cuenta con la información de los 251 Pokémones . En este proyecto se  se va importar y extraer los datos requeridos, según las necesidades de nuestro usuario final. Validamos que el usuario puede filtrar,ordenar y buscar la información por nombre y al darle click al pokemon podrá visualizar más información del pokemón y validar el cálculo agregado.
 
-## 2. Resumen
+## 2. Descripción del proyecto
 
 Esta página web es un proyecto dirigido a los jugadores nuevos y antiguos  en la cual puedan validar información relevante de sus pokémon nuestro proyecto tiene la finalidad de mejorar la experiencia que estos tienen, los usuarios podrán validar las características de los pokémones.
 
@@ -67,7 +67,7 @@ Nota: Tanto quick move como special attack tienen información de cada movimient
 
 ### Historia de usuario 1 y 2 - Visualizar todos los Pokémones
 
-🗣️ YO, COMO usuario pokémon, QUIERO que al ingresar a mi handbook quiero visualizar todos mis pokemones.
+🙋‍♀️ YO, COMO usuario pokémon, QUIERO que al ingresar a mi handbook quiero visualizar todos mis pokemones.
 
 ### Criterios de Aceptación:
 
@@ -84,7 +84,7 @@ Nota: Tanto quick move como special attack tienen información de cada movimient
 
 ## Historia de usuario 3 - Visualización de pokémon por tipo
 
- YO, COMO usuario pokémon , QUIERO se filtren los pokémon por tipo de elemento.
+🙋‍♀️YO, COMO usuario pokémon , QUIERO se filtren los pokémon por tipo de elemento.
 
 ### Criterios de Aceptación:
 
@@ -104,7 +104,7 @@ Nota: Tanto quick move como special attack tienen información de cada movimient
 
 ## Historia de usuario 4 - Búsqueda personalizada
 
-🗣️ YO, COMO usuario pokémon , QUIERO  buscar un pokémon en especifico mediante un buscador.
+🙋‍♀️ YO, COMO usuario pokémon , QUIERO  buscar un pokémon en especifico mediante un buscador.
 de manera rápida.
 
 ### Criterios de Aceptación:
@@ -120,7 +120,7 @@ de manera rápida.
 
 ## Historia de usuario 5 - Visualizar la ficha Técnica de cada Pokémon
 
-🗣️ YO, COMO usuario pokemon , QUIERO visualizar información más detallada de cada pokémon.
+🙋‍♀️ YO, COMO usuario pokemon , QUIERO visualizar información más detallada de cada pokémon.
 
 ### Criterios de Aceptación:
 
@@ -153,7 +153,8 @@ HTML y CSS<br>
 ✔ Identificar y entender tipos de selectores en CSS.<br>
 ✔ Entender cómo funciona flexbox en CSS.<br>
 ✔ Construir tu aplicación respetando el diseño planeado (maquetación).<br>
-DOM
+
+DOM<br>
 ✔ Entender y reconocer los selectores del DOM (querySelector | querySelectorAll).<br>
 ✔ Manejar eventos del DOM. (addEventListener)<br>
 ✔ Manipular dinámicamente el DOM. (createElement, appendchild, innerHTML, value).<br>
@@ -175,16 +176,15 @@ Git y GitHub<br>
 ✔ Utilizar los repositorios de GitHub (clone | fork | gh-pages).<br>
 
 Buenas prácticas de desarrollo<br>
-
 ✔ Organizar y dividir el código en módulos (Modularización).<br>
 ✔ Utilizar identificadores descriptivos (Nomenclatura | Semántica).<br>
 ✔ Utilizar linter para seguir buenas prácticas (ESLINT). 
 
 # 5. Consideraciones generales
 
-Este proyecto se realizó en dupla.
-La interfaz del proyecto esta desplegada usando GitHub Pages.
-Se realizó en 4 semanas.
+✔ Este proyecto se realizó en dupla.
+✔ La interfaz del proyecto esta desplegada usando GitHub Pages.
+✔ Se realizó en 4 semanas.
 
 # 6. Checklist 
 ✔ Usa VanillaJS.
