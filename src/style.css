@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
 /*GENERAL FONT*/
 *{
   margin: 0px;
   padding: 0px;
-  box-sizing: border-box; /*debe calcular el ancho y alto total de un elemento*/
+  box-sizing: border-box; /*establece una caja para tu ancho*/
   text-decoration: none;
   font-family: 'Ranchers', cursive;
 }
@@ -39,7 +39,7 @@
     /*haremos nuestro menu de navegacion*/
     .elements-nav ul{
     list-style:none;/*quitarle los estilos de lista*/
-    display:flex;/*hace que los li sean cajas flexibles los coloue en una fila*/
+    display:flex;/*distribuir el espacio entre los ítems*/
     /*por defecto flex-direction:row;
     justify.content:center;*/
     }
@@ -55,6 +55,7 @@
     background:rgb(255, 255, 255);
     border-color: solid 1em black;
     font-family:fantasy;
+    cursor:pointer;
         }
     
     .elements-nav li a{ /*texto del navegador*/
@@ -68,13 +69,14 @@
     .elements-nav li a:hover{
       color:rgb(0, 0, 0);
       }
+
     /*boton menu desplegable*/  
     @media(max-width:500px){
     header label{
     display:block;
     }
     
-    .elements-nav{ /*formao de las cajas del menú hamburguesa*/
+    .elements-nav{ /*formato de las cajas del menú hamburguesa*/
     position:absolute;
     background:#e41616;
     width:50%;
@@ -103,19 +105,17 @@
 
  .section{
   background: url('img/navigation/fondo.jpg') ;
-    width: 100%;
-     height: 100vh; 
+  width: 100%;
+  height: 100vh;  
   background-repeat: no-repeat;
- background-position: center flex;
+  background-position: center flex;
   background-size: cover;/*reescala automáticamente*/
- 
-   /*flex-flow: row wrap; abrev direction y wrap-ajustarse*/
+
   
  }
    .slider{
      width: 100%;
-     height: 100vh; /*El elemento vh es igual a 1/100 de la altura del viewport
-     */
+     height: 100vh; 
      background-size: cover;
      background-position: center;
    }
@@ -149,11 +149,13 @@
    letter-spacing: 0.08em;
    background-color: rgb(255, 0, 0);
    border:2px solid;
-  font:inherit;line-height:1;
+  font:inherit;line-height:1;/*fuente heredada*/
   margin:.0em;
   padding:0.5em 2em;
    
  }
+ 
+
    .btnMostrar:focus, .btnMostrar:hover{
      box-shadow:inset 0 0 0 2em var(--hover);
    }
@@ -164,7 +166,8 @@
    }          
  
    button:focus, button:hover{
-     border-color:var(--hover);
+     border-color:var(--hover);/*se usa para insertar
+      el valor de una variable*/
      color: rgb(255, 255, 255);
    }
    
@@ -177,7 +180,6 @@
 footer{
     background-color:#fffb00;
     color: rgb(14, 29, 248);
-    font-family: 'Noto Sans JP', sans-serif;
     display: flex;
     font-size: 12px;
     justify-content: center;
@@ -207,9 +209,7 @@ footer{
     width: 9em;
     border-radius: 0.4em;
     }
-.menu-container option{
-    font-family: 'Lato', sans-serif;
-}
+
 .menu-container label{
     padding: 0em 0.5em;
 }
@@ -232,7 +232,6 @@ footer{
  }
 
  .bannerBox div{
-   background-color: white;
    /*background-position: center;*/
    border-radius: 0.4em;
    height: 1.8em;
@@ -243,12 +242,9 @@ footer{
  }
  /*boton RESET*/
 .all-pokemon{
-  font-family: 'Lato', sans-serif;
- /*border: none;*/
   background-color:  #f5f107;
   border-radius: 0.8em;
   border:2px solid;
- /* font:inherit;line-height:1;*/
   margin:.0.5em;
   padding:0.5em 2em;
   color:var(--color);
@@ -264,12 +260,8 @@ footer{
   background-color: black;
 }
 
-.etiqueta{
-  color: black;
-  margin: .0.8em;
-  background-position:bottom;
+
   
-}
 .pokemones-quantity{ 
   background-color: black;
   text-align: center;
@@ -311,22 +303,25 @@ footer{
 /*boton de busqueda*/
 
 #search.search.comun{
-  background-color: transparent;
+  background-color: white;
   border-radius: 0;
   border: solid 0;
   display: inline-flex;
-}
+  text-align: center top;
+  width: 100%;
+ height: 27px;
 
-.searcher img{
-  width: 10%;
-  margin: auto;
-  background-color: white;
-  background-position: center;
+
   
 }
-.search {
-  font-family: 'Lato', sans-serif;
-}
+
+/*.searcher img{
+  width: 8%;
+  margin: auto;
+  background-color: white;
+  background-position: right; 
+}*/
+
 
 select{
 background-position: right;
@@ -435,7 +430,7 @@ background: rgba(0, 0, 0, 0.452);
 
 .container-modal{
 position: relative;
-background-color: #a0f3d3;
+background-color: #ade9f3;
   margin: auto;
   width: 90%;
   border-radius: 0.4em;
