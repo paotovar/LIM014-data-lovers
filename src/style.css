@@ -95,10 +95,18 @@
     
     }
     }
- /*Hamburguesa*/    
+ /*Hamburguesa*/  
+ 
+ 
 
  /*GENERAL SCREEN*/
+
  .section{
+  background: url('img/navigation/fondo.jpg') ;
+
+  background-repeat: no-repeat;
+ background-position: center flex;
+  background-size: cover;/*reescala automáticamente*/
    display: flex; /*permite */
    flex-flow: row wrap; /*abrev direction y wrap-ajustarse*/
    background: transparent;
@@ -123,18 +131,13 @@
        align-items: center;
      }
  
- .section{
-     background: url('img/navigation/fondo.jpg') ;
-     background-repeat: no-repeat;
-     background-position: left;  
-     
-   }
  
  .pok{
    width: 40%;
    padding-bottom: 40px;
    align-self: center;
    }
+
  .btnMostrar{
    outline: none;
    text-transform: uppercase;
@@ -383,7 +386,8 @@ margin-left: 2em ;
 
 
 .poke-img{
-  height: 15em;
+  height: 15%;
+  background-position: center;
   text-align: center;
 }
 
@@ -395,14 +399,14 @@ margin-left: 2em ;
 
 }
 .poke-info {
-  font-size: 1em;
+  font-size: 0.8em;
 }
 
 .comun img{
   width: 2.5em;
 }
 .message-error img{
-  width: 15em;
+  width: 10em;
 }
 
 
@@ -411,7 +415,7 @@ margin-left: 2em ;
 .modal{
 display: none;
 position: fixed;
-z-index:3;
+z-index:4;
 overflow: auto;
 left: 0;
 top:0;
