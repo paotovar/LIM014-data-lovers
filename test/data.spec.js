@@ -1,3 +1,27 @@
+/*import { example, anotherExample } from '../src/data.js';
+
+
+describe('example', () => {
+  it('is a function', () => {
+    expect(typeof example).toBe('function');
+  });
+
+  it('returns `example`', () => {
+    expect(example()).toBe('example');
+  });
+});
+
+
+describe('anotherExample', () => {
+  it('is a function', () => {
+    expect(typeof anotherExample).toBe('function');
+  });
+
+  it('returns `anotherExample`', () => {
+    expect(anotherExample()).toBe('OMG');
+  });
+});*/
+
 import {
   filterByType, searchPokemonByName, order, changeOrder, calculateStab,
   calculateDps, calculateEps,
@@ -16,19 +40,19 @@ describe('Filtrar por tipo de elemento', () => {
   it('Deberia ser un objeto', () => {
     expect(typeof inputTest).toBe('object');
   });
-  it('Deberia retornar un arreglos de los pokemon que son tipo "fuego"', () => {
-    expect(filterByType(inputTest, 'fire')).toEqual(outputTypeElement);
+  it('Deberia retornar un arreglos de los pokemon que son tipo "agua"', () => {
+    expect(filterByType(inputTest, 'water')).toEqual(outputTypeElement);
   });
 });
 describe('Busqueda de pokemon por nombre', () => {
   it('Deberia ser una funcion', () => {
     expect(typeof searchPokemonByName).toBe('function');
   });
-  it('Deberia retornar un arreglos de los pokemon que inician con "ch"', () => {
-    expect(searchPokemonByName(inputTest, 'ch')).toEqual(outputSearchName1);
+  it('Deberia retornar un arreglos de los pokemon que inician con "s"', () => {
+    expect(searchPokemonByName(inputTest, 's')).toEqual(outputSearchName1);
   });
-  it('Deberia retornar un arreglo con el pokemon de nombre "charmander"', () => {
-    expect(searchPokemonByName(inputTest, 'charmander')).toEqual(outputSearchName2);
+  it('Deberia retornar un arreglo con el pokemon de nombre "bulbasaur"', () => {
+    expect(searchPokemonByName(inputTest, 'bulbasaur')).toEqual(outputSearchName2);
   });
   it('Deberia retornar un arreglo vacio de no encontrar ningun pokemon', () => {
     const arrayVacio = searchPokemonByName(inputTest, 'abcdef').length;
@@ -101,29 +125,3 @@ describe('Calcular EPS de cada pokemon', () => {
     expect(calculateEps(inputAttack)).toEqual(outputEps);
   });
 });
-
-
-
-/*import { example, anotherExample } from '../src/data.js';
-
-
-describe('example', () => {
-  it('is a function', () => {
-    expect(typeof example).toBe('function');
-  });
-
-  it('returns `example`', () => {
-    expect(example()).toBe('example');
-  });
-});
-
-
-describe('anotherExample', () => {
-  it('is a function', () => {
-    expect(typeof anotherExample).toBe('function');
-  });
-
-  it('returns `anotherExample`', () => {
-    expect(anotherExample()).toBe('OMG');
-  });
-});*/
