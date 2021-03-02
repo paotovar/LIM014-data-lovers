@@ -129,7 +129,7 @@ const showModal = (pokemon) => {
                                 </div>
                               </div>
                             </div>
-                            <div class="resist-weakne">
+                              <div class="resist-weakne">
                               <div class="comun-modal comun bold">
                                 <p>Resistant</p>
                                 <div class="resistant">${resistant(pokemon.resistant)}</div>
@@ -166,6 +166,7 @@ const showModal = (pokemon) => {
                               <div>${showsAttacks(calculateEps(pokemon['special-attack']))}</div>
                             </div>
                           </div>
+                            </div>
                       </div>
                     </div>`;
   document.querySelector('.container-modal').appendChild(modal);/*---falta */

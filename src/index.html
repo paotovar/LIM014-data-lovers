@@ -39,12 +39,7 @@
       </div>
     </div>
   </section>
-  <!--<footer class="footer">
-    <nav class="feet">
-      <a href="#">©Copyright 2021 by Brighit Quisuruco & Paola Tovar</a>
-    </nav>
-  </footer>-->
-</div>
+  </div>
 
 
   <!-- Second Screen -->
@@ -61,9 +56,10 @@
                 <button class="all-pokemon bold">Reset</button>
               </div>
               <div>
-                  <label for="element-type-filter" class= "etiqueta"> Type </label>
-                  <select id="element-type-filter" ><!--select se utiliza para crear
+                 <!-- <label for="element-type-filter" class= "etiqueta"> Type </label>-->
+                  <select id="element-type-filter" > <!--select se utiliza para crear
                      un desplegable option opciones disponibles-->
+                    <option disabled selected>Type</option>
                     <option value="all">All</option>
                     <option value="bug">Bug</option>
                     <option value="dark">Dark</option>
@@ -85,8 +81,10 @@
                     <option value="water"> Water</option>
                   </select>
                 </div>
-                <div><label for="order-by" class= "etiqueta"> Order by</label> 
-                  <select id="order-by">
+              <div>
+                <!--<label for="order-by" class= "etiqueta"> Order by</label>-->
+                  <select id="order-by"> 
+                    <option disabled selected>Order-by</option>
                     <option value="num">Num</option>
                     <option value="cp">CP</option>
                     <option value="hp">HP</option>
@@ -125,15 +123,3 @@
   </body>
 </html>
 
-<!--<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script src="main.js" type="module"></script>
-  </body>
-</html>-->
