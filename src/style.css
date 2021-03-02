@@ -314,7 +314,7 @@ footer{
 }
 
 .searcher img{
-  width: 10%;
+  width: 8%;
   margin: auto;
   background-color: white;
   background-position: center;
@@ -322,6 +322,7 @@ footer{
 }
 .search {
   font-family: 'Lato', sans-serif;
+  margin-bottom: 2em;
 }
 
 select{
@@ -383,7 +384,8 @@ margin-left: 2em ;
 
 
 .poke-img{
-  height: 15em;
+  height: 15%;
+  background-position: center;
   text-align: center;
 }
 
@@ -395,14 +397,14 @@ margin-left: 2em ;
 
 }
 .poke-info {
-  font-size: 1em;
+  font-size: 0.8em;
 }
 
 .comun img{
   width: 2.5em;
 }
 .message-error img{
-  width: 15em;
+  width: 10em;
 }
 
 
@@ -411,7 +413,7 @@ margin-left: 2em ;
 .modal{
 display: none;
 position: fixed;
-z-index:3;
+z-index:4;
 overflow: auto;
 left: 0;
 top:0;
