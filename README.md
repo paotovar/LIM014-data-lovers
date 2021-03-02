@@ -182,23 +182,23 @@ Buenas prácticas de desarrollo<br>
 
 # 5. Consideraciones generales
 
-✔ Este proyecto se realizó en dupla.
-✔ La interfaz del proyecto esta desplegada usando GitHub Pages.
-✔ Se realizó en 4 semanas.
+✔ Este proyecto se realizó en dupla.<br>
+✔ La interfaz del proyecto esta desplegada usando GitHub Pages.<br>
+✔ Se realizó en 4 semanas.<br>
 
 # 6. Checklist 
-✔ Usa VanillaJS.
-✔ No hace uso de this.
-[-] Pasa linter (npm run pretest)
-✔] Pasa tests (npm test)
-✔ Pruebas unitarias cubren un mínimo del 70% de statements, functions y lines y branches.
-✔ Incluye Definición del producto clara e informativa en README.md.
-✔ Incluye historias de usuario en README.md.
-✔ Incluye sketch de la solución (prototipo de baja fidelidad) en README.md.
-✔ Incluye Diseño de la Interfaz de Usuario (prototipo de alta fidelidad) en README.md.
-[x] Incluye link a Zeplin/Loom en README.md.
-✔ Incluye el listado de problemas que detectaste a través de tests de usabilidad en el README.md.
-[〰️] UI: Muestra lista y/o tabla con datos y/o indicadores.
-✔ UI: Permite ordenar data por uno o más campos (asc y desc).
+✔ Usa VanillaJS.<br>
+✔ No hace uso de this.<br>
+[-] Pasa linter (npm run pretest)<br>
+✔] Pasa tests (npm test)<br>
+✔ Pruebas unitarias cubren un mínimo del 70% de statements, functions y lines y branches.<br>
+✔ Incluye Definición del producto clara e informativa en README.md.<br>
+✔ Incluye historias de usuario en README.md.<br>
+✔ Incluye sketch de la solución (prototipo de baja fidelidad) en README.md.<br>
+✔ Incluye Diseño de la Interfaz de Usuario (prototipo de alta fidelidad) en README.md.<br>
+[x] Incluye link a Zeplin/Loom en README.md.<br>
+✔ Incluye el listado de problemas que detectaste a través de tests de usabilidad en el README.md.<br>
+[〰️] UI: Muestra lista y/o tabla con datos y/o indicadores.<br>
+✔ UI: Permite ordenar data por uno o más campos (asc y desc).<br>
 ✔ UI: Permite filtrar data en base a una condición.
-[-] UI: Es responsive.
+[-] UI: Es responsive.<br>
