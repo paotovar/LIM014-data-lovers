@@ -138,7 +138,9 @@ de manera rápida.
 
 
 # 3.3 Prototipo de baja fidelidad
-![Imagen Logo](./src/img/imgREADME/pokemonLogo.jpg)
+![Imagen Mano Alzada](./src/img/imgREADME/manoAlzada1.jpg)
+![Imagen Mano Alzada](./src/img/imgREADME/manoAlzada2.jpg)
+![Imagen Mano Alzada](./src/img/imgREADME/manoAlzada3.jpg)
 
 
 # 4.Objetivos de aprendizaje
@@ -178,35 +180,14 @@ Git y GitHub<br>
 Buenas prácticas de desarrollo<br>
 ✔ Organizar y dividir el código en módulos (Modularización).<br>
 ✔ Utilizar identificadores descriptivos (Nomenclatura | Semántica).<br>
-✔ Utilizar linter para seguir buenas prácticas (ESLINT). 
+✔ Utilizar linter para seguir buenas prácticas (ESLINT). <br>
 
 # 5. Consideraciones generales
 
-<<<<<<< HEAD
-✔ Este proyecto se realizó en dupla.
-✔ La interfaz del proyecto esta desplegada usando GitHub Pages.
-✔ Se realizó en 4 semanas.
-
-# 6. Checklist 
-✔ Usa VanillaJS.
-✔ No hace uso de this.
-[-] Pasa linter (npm run pretest)
-✔] Pasa tests (npm test)
-✔ Pruebas unitarias cubren un mínimo del 70% de statements, functions y lines y branches.
-✔ Incluye Definición del producto clara e informativa en README.md.
-✔ Incluye historias de usuario en README.md.
-✔ Incluye sketch de la solución (prototipo de baja fidelidad) en README.md.
-✔ Incluye Diseño de la Interfaz de Usuario (prototipo de alta fidelidad) en README.md.
-[x] Incluye link a Zeplin/Loom en README.md.
-✔ Incluye el listado de problemas que detectaste a través de tests de usabilidad en el README.md.
-[〰️] UI: Muestra lista y/o tabla con datos y/o indicadores.
-✔ UI: Permite ordenar data por uno o más campos (asc y desc).
-✔ UI: Permite filtrar data en base a una condición.
-[-] UI: Es responsive.
-=======
 ✔ Este proyecto se realizó en dupla.<br>
 ✔ La interfaz del proyecto esta desplegada usando GitHub Pages.<br>
 ✔ Se realizó en 4 semanas.<br>
+
 
 # 6. Checklist 
 ✔ Usa VanillaJS.<br>
@@ -222,6 +203,5 @@ Buenas prácticas de desarrollo<br>
 ✔ Incluye el listado de problemas que detectaste a través de tests de usabilidad en el README.md.<br>
 [〰️] UI: Muestra lista y/o tabla con datos y/o indicadores.<br>
 ✔ UI: Permite ordenar data por uno o más campos (asc y desc).<br>
-✔ UI: Permite filtrar data en base a una condición.
-[-] UI: Es responsive.<br>
->>>>>>> 9c8ac0d8aba27761e59674158c4bd505e61cf145
+✔ UI: Permite filtrar data en base a una condición.<br>
+[-] UI: Es responsive.
