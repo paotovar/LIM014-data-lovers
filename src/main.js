@@ -95,11 +95,6 @@ const showsAttacks = (arrayAtacks) => {
     stabEachPokemon += `<p class="comun-attack">${nuevo}</p>`;
     
   });
-<<<<<<< HEAD
-  console.log(stabEachPokemon);
-=======
-
->>>>>>> bri
   return stabEachPokemon;
 };
 

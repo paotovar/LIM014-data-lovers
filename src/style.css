@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
-=======
-
->>>>>>> bri
 
 /*GENERAL FONT*/
 *{
@@ -108,23 +104,12 @@
  /*GENERAL SCREEN*/
 
  .section{
-<<<<<<< HEAD
-  background: url('img/navigation/fondo.jpg') ;
-  width: 100%;
-  height: 100vh;  
-  background-repeat: no-repeat;
-  background-position: center flex;
-  background-size: cover;/*reescala automáticamente*/
-
-  
-=======
    display: flex; /*permite */
    flex-flow: row wrap; /*abrev direction y wrap-ajustarse*/
    background: transparent;
    background: url('img/navigation/fondo.jpg') ;
    background-repeat: cover;
    background-position: left;  
->>>>>>> bri
  }
    .slider{
      width: 100%;
@@ -145,51 +130,12 @@
        align-items: center;
        
      }
-<<<<<<< HEAD
- 
- 
-=======
      
->>>>>>> bri
  .pok{
    width: 40%;
    padding-bottom: 40px;
    align-self: center;
    }
-<<<<<<< HEAD
-
- .btnMostrar{
-   outline: none;
-   text-transform: uppercase;/*convertir en mayusculas*/
-   cursor:pointer;
-   border-radius: 15px;
-   font-size: 1em;
-   font-weight: 300;
-   letter-spacing: 0.08em;
-   background-color: rgb(255, 0, 0);
-   border:2px solid;
-  font:inherit;line-height:1;/*fuente heredada*/
-  margin:.0em;
-  padding:0.5em 2em;
-   
- }
- 
-
-   .btnMostrar:focus, .btnMostrar:hover{
-     box-shadow:inset 0 0 0 2em var(--hover);
-   }
-   .btnMostrar{
-     color: rgb(248, 248, 252);
-     --hover:#2e0d06e0;
-     transition:.25s;
-   }          
- 
-   button:focus, button:hover{
-     border-color:var(--hover);/*se usa para insertar
-      el valor de una variable*/
-     color: rgb(255, 255, 255);
-   }
-=======
    .btnMostrar{
     outline: none;
     text-transform: uppercase;
@@ -218,7 +164,6 @@
       border-color:var(--hover);
       color: rgb(255, 255, 255);
     }
->>>>>>> bri
    
    
   
@@ -279,10 +224,7 @@ footer{
  }
 
  .bannerBox div{
-<<<<<<< HEAD
-=======
   /*background-color: white;*/
->>>>>>> bri
    /*background-position: center;*/
    /*border-radius: 0.4em;*/
    height: 1.8em;
@@ -319,12 +261,8 @@ footer{
   background-color:  #f5f107;
   border-radius: 0.8em;
   border:2px solid;
-<<<<<<< HEAD
-  margin:.0.5em;
-=======
  /* font:inherit;line-height:1;*/
   /*margin:.0.5em;*/ 
->>>>>>> bri
   padding:0.5em 2em;
   color:var(--color);
   transition:.25s;
@@ -400,26 +338,6 @@ footer{
 
 #search.search.comun{
   background-color: white;
-<<<<<<< HEAD
-  border-radius: 0;
-  border: solid 0;
-  display: inline-flex;
-  text-align: center top;
-  width: 100%;
- height: 27px;
-
-
-  
-}
-
-/*.searcher img{
-  width: 8%;
-  margin: auto;
-  background-color: white;
-  background-position: right; 
-}*/
-
-=======
   text-align:center ;
   border-radius: 0.4em;
   border: solid 0;
@@ -434,7 +352,6 @@ footer{
   margin-bottom: 2em;
   
 }
->>>>>>> bri
 
 select{
 background-position: right;
@@ -567,11 +484,7 @@ display: cover;
 
 .container-modal{
 position: relative;
-<<<<<<< HEAD
-background-color: #ade9f3;
-=======
 background-color: #95e7c1;
->>>>>>> bri
   margin: auto;
   width: 90%;
   border-radius: 0.4em;
