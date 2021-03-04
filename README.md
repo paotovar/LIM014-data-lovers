@@ -138,7 +138,9 @@ de manera rápida.
 
 
 # 3.3 Prototipo de baja fidelidad
-![Imagen Logo](./src/img/imgREADME/pokemonLogo.jpg)
+![Imagen Mano Alzada](./src/img/imgREADME/manoAlzada1.jpg)
+![Imagen Mano Alzada](./src/img/imgREADME/manoAlzada2.jpg)
+![Imagen Mano Alzada](./src/img/imgREADME/manoAlzada3.jpg)
 
 
 # 4.Objetivos de aprendizaje
@@ -178,14 +180,18 @@ Git y GitHub<br>
 Buenas prácticas de desarrollo<br>
 ✔ Organizar y dividir el código en módulos (Modularización).<br>
 ✔ Utilizar identificadores descriptivos (Nomenclatura | Semántica).<br>
-✔ Utilizar linter para seguir buenas prácticas (ESLINT). 
+✔ Utilizar linter para seguir buenas prácticas (ESLINT). <br>
 
 # 5. Consideraciones generales
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bri
 ✔ Este proyecto se realizó en dupla.<br>
 ✔ La interfaz del proyecto esta desplegada usando GitHub Pages.<br>
 ✔ Se realizó en 4 semanas.<br>
+
 
 # 6. Checklist 
 ✔ Usa VanillaJS.<br>
@@ -201,6 +207,7 @@ Buenas prácticas de desarrollo<br>
 ✔ Incluye el listado de problemas que detectaste a través de tests de usabilidad en el README.md.<br>
 [〰️] UI: Muestra lista y/o tabla con datos y/o indicadores.<br>
 ✔ UI: Permite ordenar data por uno o más campos (asc y desc).<br>
+<<<<<<< HEAD
 ✔ UI: Permite filtrar data en base a una condición.
 [-] UI: Es responsive.<br>
 =======
@@ -225,3 +232,7 @@ Buenas prácticas de desarrollo<br>
 ✔ UI: Permite filtrar data en base a una condición.
 [-] UI: Es responsive.
 >>>>>>> 3c9abd7b925b6cf11dd45a40cf46c60598018574
+=======
+✔ UI: Permite filtrar data en base a una condición.<br>
+[-] UI: Es responsive.
+>>>>>>> bri
