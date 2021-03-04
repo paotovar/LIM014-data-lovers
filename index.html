@@ -1,0 +1,125 @@
+<!DOCTYPE html>  
+<html>
+  <head>
+    <link rel="stylesheet" 
+    href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--responsive-->
+    <title>Data Lovers-Pokémon</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  
+   
+  <body>
+    <header>
+      <input type="checkbox" id="btn-menu">
+      <label for="btn-menu"><img src="img/navigation/pokebola.png" alt="" height="20px" width="20px">
+      </label>
+      <nav class="elements-nav">
+        <ul>
+          <li><a href="index.html">HOME</a></li>  <!--ul listas desordenadas-->
+            <li><a href="https://pokemongolive.com/es/" target="_blank">GAME</a></li>
+            <li><a href="https://www.elcomercio.com/afull/glosario-pokemongo-juego-ecuador-videojuego.html" target="_blank">LIST OF TERMS</a></li>
+            <li><a href="https://pokemaster.es/noticias/" target="_blank">NEWS</a></li>                  
+            <li><a href="https://www.snaptubeapp.com/how-to-es/movies/pokemon-movie.html" target="_blank">MOVIES</a></li>
+  
+          </ul>
+      </nav>
+    </header>
+
+
+
+   <!-- First Screen -->
+  <div id="firstScreen" >
+  <section class="section">
+    <div class="slider">
+      <div class="slider-content">
+        <img src="img/navigation/logo.png" class="pok" alt="" >
+        <button id="btnMostrar" class="btnMostrar">Meet the Pokemon</button>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+  <!-- Second Screen -->
+  <div id="secondScreen" class="hide"><!--0-->
+    <div class="filterContainer"> <!---0.1-->
+        <div class="title-pokemons"> <!--1-->
+          <h1>Pokemon´s Universe</h1>
+        </div><!--1-->
+  
+        <main>
+          <section class="pokedex">
+            <div class="bannerBox"><!--2-->
+              <div class="menu-container comun bold"><!--3-->
+                <button class="all-pokemon bold">Reset</button>
+              </div><!--3-->
+              <div><!--4-->
+                 <!-- <label for="element-type-filter" class= "etiqueta"> Type </label>-->
+                  <select id="element-type-filter" ><!--select se utiliza para crear un desplegable option opciones disponibles-->
+                    <option disabled selected>Type</option>
+                    <option value="all">All</option>
+                    <option value="bug">Bug</option>
+                    <option value="dark">Dark</option>
+                    <option value="dragon"> Dragon</option>
+                    <option value="electric">Electric</option>
+                    <option value="fairy">Fairy</option>
+                    <option value="fighting">Fighting</option>
+                    <option value="fire">Fire</option>
+                    <option value="flying">Flying</option>
+                    <option value="ghost">Ghost</option>
+                    <option value="grass">Grass</option>
+                    <option value="ground">Ground</option>
+                    <option value="ice">Ice</option>
+                    <option value="normal">Normal</option>
+                    <option value="poison">Poison</option>
+                    <option value="psychic">Psychic</option>
+                    <option value="rock">Rock</option>
+                    <option value="steel">Steel</option>
+                    <option value="water"> Water</option>
+                  </select>
+              </div><!--4-->
+              <div><!--5-->
+               <!-- <label for="order-by" class= "etiqueta"> Order by</label> -->
+                  <select id="order-by">
+                    <option disabled selected>Order-by</option>
+                    <option value="num">Num</option>
+                    <option value="cp">CP</option>
+                    <option value="hp">HP</option>
+                   </select>
+              </div><!--5-->
+              <div class="searcher"> <!--6-->
+                <input type="search" id="search" class="search comun" placeholder="search by name       🔍" autocomplete="off" spellcheck="false"/>
+              </div><!--6-->
+                <div class="btn-order"><!--7-->
+                </div><!--7-->
+            </div><!--2-->
+            
+            
+            <div class="pokemones-quantity"> <!--8-->
+                <p class="pokemones">There are( <spam id="quantity"></spam> )Pokemones</p>     
+            </div><!--8-->
+            
+
+            <div id="container-card"></div>
+            <div class="container-modal"></div>
+            <div class="container-btn-top">
+              <img src="img/top.gif" class="btn-top">
+            </div>
+          </section>      
+        </main>
+    </div> <!--0.1-->
+  </div> <!--0-->
+
+      <footer>
+        <div class="copyright">
+          <h3 class="bold comun">© Copyright by Brighit Quisuruco Ft Paola Tovar - 2021</h3>
+          <p>This prototype is intended as a guide for current and new Pokémon Go players who want to be a Pokémon master</p>
+        </div> 
+    </footer>
+
+  <script src="main.js" type="module"></script>
+  </body>
+</html>
+
