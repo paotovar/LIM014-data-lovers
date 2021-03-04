@@ -184,10 +184,6 @@ Buenas prácticas de desarrollo<br>
 
 # 5. Consideraciones generales
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> bri
 ✔ Este proyecto se realizó en dupla.<br>
 ✔ La interfaz del proyecto esta desplegada usando GitHub Pages.<br>
 ✔ Se realizó en 4 semanas.<br>
@@ -207,32 +203,7 @@ Buenas prácticas de desarrollo<br>
 ✔ Incluye el listado de problemas que detectaste a través de tests de usabilidad en el README.md.<br>
 [〰️] UI: Muestra lista y/o tabla con datos y/o indicadores.<br>
 ✔ UI: Permite ordenar data por uno o más campos (asc y desc).<br>
-<<<<<<< HEAD
 ✔ UI: Permite filtrar data en base a una condición.
 [-] UI: Es responsive.<br>
-=======
-✔ Este proyecto se realizó en dupla.
-✔ La interfaz del proyecto esta desplegada usando GitHub Pages.
-✔ Se realizó en 4 semanas.
 
-# 6. Checklist 
-✔ Usa VanillaJS.
-✔ No hace uso de this.
-[-] Pasa linter (npm run pretest)
-✔] Pasa tests (npm test)
-✔ Pruebas unitarias cubren un mínimo del 70% de statements, functions y lines y branches.
-✔ Incluye Definición del producto clara e informativa en README.md.
-✔ Incluye historias de usuario en README.md.
-✔ Incluye sketch de la solución (prototipo de baja fidelidad) en README.md.
-✔ Incluye Diseño de la Interfaz de Usuario (prototipo de alta fidelidad) en README.md.
-[x] Incluye link a Zeplin/Loom en README.md.
-✔ Incluye el listado de problemas que detectaste a través de tests de usabilidad en el README.md.
-[〰️] UI: Muestra lista y/o tabla con datos y/o indicadores.
-✔ UI: Permite ordenar data por uno o más campos (asc y desc).
-✔ UI: Permite filtrar data en base a una condición.
-[-] UI: Es responsive.
->>>>>>> 3c9abd7b925b6cf11dd45a40cf46c60598018574
-=======
-✔ UI: Permite filtrar data en base a una condición.<br>
-[-] UI: Es responsive.
->>>>>>> bri
+
