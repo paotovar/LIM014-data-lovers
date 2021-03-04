@@ -131,36 +131,34 @@
    padding-bottom: 40px;
    align-self: center;
    }
- .btnMostrar{
-   outline: none;
-   text-transform: uppercase; /*transforma el texto en mayusculas*/
-   cursor:pointer;
-   border-radius: 15px;
-   font-size: 25%;
-   font-weight: 300;
-   letter-spacing: 0.08em;
-   background-color: rgb(255, 0, 0);
-   border:2px solid;
-  font:inherit;
-  line-height:1;
-  margin:.0em;
-  padding:0.5em 2em;
-  width: 20%;
-   
- }
-   .btnMostrar:focus, .btnMostrar:hover{
-     box-shadow:inset 0 0 0 2em var(--hover);
-   }
    .btnMostrar{
-     color: rgb(248, 248, 252);
-     --hover:#2e0d06e0;
-     transition:.25s;
-   }          
- 
-   button:focus, button:hover{
-     border-color:var(--hover);
-     color: rgb(245, 240, 240);
-   }
+    outline: none;
+    text-transform: uppercase;
+    cursor:pointer;
+    border-radius: 15px;
+    font-size: 1em;
+    font-weight: 300;
+    letter-spacing: 0.08em;
+    background-color: rgb(255, 0, 0);
+    border:2px solid;
+   font:inherit;line-height:1;
+   margin:.0em;
+   padding:0.5em 2em;
+    
+  }
+    .btnMostrar:focus, .btnMostrar:hover{
+      box-shadow:inset 0 0 0 2em var(--hover);
+    }
+    .btnMostrar{
+      color: rgb(248, 248, 252);
+      --hover:#2e0d06e0;
+      transition:.25s;
+    }          
+  
+    button:focus, button:hover{
+      border-color:var(--hover);
+      color: rgb(255, 255, 255);
+    }
    
    
   
@@ -368,6 +366,16 @@ background-position: right;
   #container-pokemon{/*contenedor de card*/
       max-width: 650px;
   }
+  .container-info {
+    font-size: 80%;
+    
+    height: 10em;
+  
+  
+  }
+  .poke-info {
+    font-size: 0.8em;
+  }
 }
 
 /* ---------------Estilos Card pokemon----------------- */
@@ -379,14 +387,28 @@ background-position: right;
   display:flex;
   flex-wrap:wrap;
   justify-content:space-evenly;
+  background-position:center;
+}
+
+@media( max-width: 500px ){
+  #container-card{ /*contenedor de card*/
+    margin-left: auto;
+    margin-right:auto; 
+    max-width:1100px ;
+    padding:1em 1em;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    background-position:center;
+  }
 }
 
 .poke-num{
   margin:0;
   text-align: left;
   font-size: 0.8em;
-  background-color:yellow;
-  width: 5%;
+  background-color:#95e7c1;
+  width: 25%;
   margin-right: auto;
 
 }
@@ -419,18 +441,19 @@ background-position: right;
   height: 15%;
   background-position: center;
   text-align: center;
+  width: 80%;
 }
 
 .container-info {
+  
   font-size: 1.4em;
-  padding-left: 1em;
+ 
   height: 10em;
 
 }
 .poke-info {
   font-size: 0.8em;
 }
-
 .comun img{
   width: 2.5em;
 }
