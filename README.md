@@ -182,6 +182,7 @@ Buenas prácticas de desarrollo<br>
 
 # 5. Consideraciones generales
 
+<<<<<<< HEAD
 ✔ Este proyecto se realizó en dupla.
 ✔ La interfaz del proyecto esta desplegada usando GitHub Pages.
 ✔ Se realizó en 4 semanas.
@@ -202,3 +203,25 @@ Buenas prácticas de desarrollo<br>
 ✔ UI: Permite ordenar data por uno o más campos (asc y desc).
 ✔ UI: Permite filtrar data en base a una condición.
 [-] UI: Es responsive.
+=======
+✔ Este proyecto se realizó en dupla.<br>
+✔ La interfaz del proyecto esta desplegada usando GitHub Pages.<br>
+✔ Se realizó en 4 semanas.<br>
+
+# 6. Checklist 
+✔ Usa VanillaJS.<br>
+✔ No hace uso de this.<br>
+[-] Pasa linter (npm run pretest)<br>
+✔] Pasa tests (npm test)<br>
+✔ Pruebas unitarias cubren un mínimo del 70% de statements, functions y lines y branches.<br>
+✔ Incluye Definición del producto clara e informativa en README.md.<br>
+✔ Incluye historias de usuario en README.md.<br>
+✔ Incluye sketch de la solución (prototipo de baja fidelidad) en README.md.<br>
+✔ Incluye Diseño de la Interfaz de Usuario (prototipo de alta fidelidad) en README.md.<br>
+[x] Incluye link a Zeplin/Loom en README.md.<br>
+✔ Incluye el listado de problemas que detectaste a través de tests de usabilidad en el README.md.<br>
+[〰️] UI: Muestra lista y/o tabla con datos y/o indicadores.<br>
+✔ UI: Permite ordenar data por uno o más campos (asc y desc).<br>
+✔ UI: Permite filtrar data en base a una condición.
+[-] UI: Es responsive.<br>
+>>>>>>> 9c8ac0d8aba27761e59674158c4bd505e61cf145
