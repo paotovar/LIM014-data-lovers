@@ -141,7 +141,7 @@
 
  .btnMostrar{
    outline: none;
-   text-transform: uppercase;
+   text-transform: uppercase;/*convertir en mayusculas*/
    cursor:pointer;
    border-radius: 15px;
    font-size: 1em;
@@ -229,6 +229,7 @@ footer{
  padding-top: 2.5% ;
  padding-bottom: 2.5%;
  /*background-position: center;*/
+ 
  }
 
  .bannerBox div{
@@ -418,7 +419,7 @@ top:0;
 width: 100%;
 height:100%;
 background: rgba(0, 0, 0, 0.452);
-
+display: cover;
 }
 .modal-flex{
   width: 100%;

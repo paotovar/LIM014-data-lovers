@@ -222,6 +222,7 @@ const showPokemon = (list) => {
 };
 
 showPokemon(pokemonList); // llamado al metodo
+
 btnAll.addEventListener('click', () => {
   containerPokemons.innerHTML = '';
   showPokemon(order(pokemonList, 'num'));
