@@ -60,6 +60,7 @@ const TypePokemon = (arrayType) => {
     // tu iterador
 }[, thisArg]);*/
     imgEachPokemon += `<img src="img/pokemonType/${typeElement}.png" alt=" type pokemon"/>`;
+    
   });
   return imgEachPokemon;
 };
@@ -67,6 +68,7 @@ const resistant = (arrayType) => {
   let imgEachPokemon = '';
   arrayType.forEach((resistantPokemon) => {
     imgEachPokemon += `<img src="img/pokemonType/${resistantPokemon}.png" alt="resistant"/>`;
+   /* console.log(resistantPokemon);*/
   });
   return imgEachPokemon;
 };
@@ -84,12 +86,14 @@ const obtainNames = (attack) => {
     var nuevo_array = arr.map(function callback(elemento actual, indice, array) {
     // Elemento devuelto de nuevo_array
 }[, thisArg]) */
+
   return names;
 };
 const showsAttacks = (arrayAtacks) => {
   let stabEachPokemon = '';
   arrayAtacks.forEach((nuevo) => {
-    stabEachPokemon += `<p class="comun-attack">${nuevo}</p>`;/*--falta */
+    stabEachPokemon += `<p class="comun-attack">${nuevo}</p>`;
+    
   });
   return stabEachPokemon;
 };
@@ -100,7 +104,7 @@ const showModal = (pokemon) => {
    con el nombre especificado.*/
   modal.classList.add('modal');
   modal.innerHTML = `<div class="modal-flex"> 
-                      <div class="container-modal ${pokemon.type[0]} comun-card">
+                     <div class="container-modal  comun-card">
                           <i class="close fas fa-times-circle"></i>
                           <div class="img-modal"><img src="${pokemon.img}"></div>
                           <div class="modal-info">
@@ -132,7 +136,7 @@ const showModal = (pokemon) => {
                               <div class="resist-weakne">
                               <div class="comun-modal comun bold">
                                 <p>Resistant</p>
-                                <div class="resistant">${resistant(pokemon.resistant)}</div>
+                               <div class="resistant">${resistant(pokemon.resistant)}</div>
                               </div>
                               <div class="comun-modal comun bold">
                                 <p>Weaknesses</p>
@@ -161,7 +165,7 @@ const showModal = (pokemon) => {
                             </div>
                             <div class="quick-move">
                               <div>${showsAttacks(obtainNames(pokemon['special-attack']))}</div>
-                              <div>${showsAttacks(calculateStab(pokemon['special-attack'], pokemon.type))}</div>
+                              <div>${showsAttacks(calculateStab(pokemon['special-attack'], pokemon.type))}</div><!--f-->
                               <div>${showsAttacks(calculateDps(pokemon['special-attack'], pokemon.type))}</div>
                               <div>${showsAttacks(calculateEps(pokemon['special-attack']))}</div>
                             </div>
@@ -169,7 +173,7 @@ const showModal = (pokemon) => {
                             </div>
                       </div>
                     </div>`;
-  document.querySelector('.container-modal').appendChild(modal);/*---falta */
+  document.querySelector('.container-modal').appendChild(modal);
 
   modal.style.display = 'block';
   modal.querySelector('.close').addEventListener('click', () => {
@@ -182,9 +186,9 @@ const showModal = (pokemon) => {
       el elemento sobre el cual se hizo click 
       si se asocia el evento a "contenedor" o "elemento padre" el this corresponde al mismo,
        mientras event.target corresponde al elemento hijo donde se produjo el click (en el caso del ejemplo el <span></span>).*/ 
-      modal.classList.remove('modal');
+    modal.classList.remove('modal');
       containerModal.innerHTML = '';
-    }/*---falta */
+    }
   });
   return modal;
 };
@@ -218,6 +222,7 @@ const showPokemon = (list) => {
 };
 
 showPokemon(pokemonList); // llamado al metodo
+
 btnAll.addEventListener('click', () => {
   containerPokemons.innerHTML = '';
   showPokemon(order(pokemonList, 'num'));
@@ -243,7 +248,7 @@ const MessageError = () => {
   const p = document.createElement('p');
   const img = document.createElement('img');
   div.className = 'message-error comun';
-  p.innerHTML = 'No hay ningun pokemon con ese nombre';
+  p.innerHTML = 'There are not pokemon with that name';
   img.src = 'img/error.gif';
   div.appendChild(p);
   div.appendChild(img);
@@ -313,7 +318,7 @@ window.scroll(options)*/
 document.addEventListener('click', () => {
   window.scrollTo({
     top: 0,
-    behavior: 'smooth',/*---falta */
+    behavior: 'smooth',
   });
 });
 
