@@ -133,7 +133,7 @@ const showModal = (pokemon) => {
                                 </div>
                               </div>
                             </div>
-                            <div class="resist-weakne">
+                              <div class="resist-weakne">
                               <div class="comun-modal comun bold">
                                 <p>Resistant</p>
                                <div class="resistant">${resistant(pokemon.resistant)}</div>
@@ -170,6 +170,7 @@ const showModal = (pokemon) => {
                               <div>${showsAttacks(calculateEps(pokemon['special-attack']))}</div>
                             </div>
                           </div>
+                            </div>
                       </div>
                     </div>`;
   document.querySelector('.container-modal').appendChild(modal);
@@ -247,7 +248,7 @@ const MessageError = () => {
   const p = document.createElement('p');
   const img = document.createElement('img');
   div.className = 'message-error comun';
-  p.innerHTML = 'No hay ningun pokemon con ese nombre';
+  p.innerHTML = 'There are not pokemon with that name';
   img.src = 'img/error.gif';
   div.appendChild(p);
   div.appendChild(img);
