@@ -34,30 +34,30 @@ Los Pokémon aparecen en estado salvaje (mientras caminan por la calle) donde pu
 
 ### Datos que te ayudarán a atrapar y coleccionar pokémones
 
-Encounter: % Base de Huida y % Base de Captura.
-Spaw-chance: Frecuencia de aparición de un pokémon.
-Egg: En qué tipo de huevos aparece el pokémon.
-Buddy-distance-km: Distancia en km que debe caminar el usuario con un pokémon con buddy para obtener 1 caramelo de dicho pokémon.
+Encounter: % Base de Huida y % Base de Captura.<br>
+Spaw-chance: Frecuencia de aparición de un pokémon.<br>
+Egg: En qué tipo de huevos aparece el pokémon.<br>
+Buddy-distance-km: Distancia en km que debe caminar el usuario con un pokémon con buddy para obtener 1 caramelo de dicho pokémon.<br>
 Evolution: Tipo de caramelo, siguiente evolución y anterior evolución, si necesita algún ítem para evolucionar.
 
 
 ### Datos que nos ayudarán para pelear
 
-Stats: Base de Ataque, Defensa y Salud + Máx. CP (máx. puntos de combate) y Máx. HP (máx. puntos de salud).
-Resistant: A qué tipos de pokémon es resistente.
-Weaknesses: Contra qué tipos de pokémon es débil.
+Stats: Base de Ataque, Defensa y Salud + Máx. CP (máx. puntos de combate) y Máx. HP (máx. puntos de salud).<br>
+Resistant: A qué tipos de pokémon es resistente.<br>
+Weaknesses: Contra qué tipos de pokémon es débil.<br>
 Quick-move: Movimientos rápidos.
 Special-attack: Ataques especiales
 
 
 ###  Datos que puedo obtener de acá
 
-1.Qué pokémon tiene mayor punto de combate y mayor punto de salud.
-2.Algunas veces el usuario tiene que elegir a los que tienen menos cantidad de debilidades y/o resistencia y saber de qué tipo son. Por ello, es importante para un maestro Pokémon poder ordenarlos por estas 3 características.
-3.STAB:Same Type Attack Bonus, traducido como Bonificación por Ataque del Mismo Tipo. Se calcula así: si el Pokémon que usa el movimiento es del mismo tipo que el movimiento, el daño aumenta en un 20%
-4.DPS: El daño por segundo se calcula dividiendo el daño base del movimiento por el STAB entre el tiempo que toma el movimiento.
-5.EPS: La energia por movimiento se calcula dividiendo la energía entre el tiempo que toma el movimiento.
-6.El mejor set de movimientos: calcula cuál es la mejor combinación de quick-move con special-attack para ataque y defensa en gimnasios.
+1.Qué pokémon tiene mayor punto de combate y mayor punto de salud.<br>
+2.Algunas veces el usuario tiene que elegir a los que tienen menos cantidad de debilidades y/o resistencia y saber de qué tipo son. Por ello, es importante para un maestro Pokémon poder ordenarlos por estas 3 características.<br>
+3.STAB:Same Type Attack Bonus, traducido como Bonificación por Ataque del Mismo Tipo. Se calcula así: si el Pokémon que usa el movimiento es del mismo tipo que el movimiento, el daño aumenta en un 20%<br>
+4.DPS: El daño por segundo se calcula dividiendo el daño base del movimiento por el STAB entre el tiempo que toma el movimiento.<br>
+5.EPS: La energia por movimiento se calcula dividiendo la energía entre el tiempo que toma el movimiento.<br>
+6.El mejor set de movimientos: calcula cuál es la mejor combinación de quick-move con special-attack para ataque y defensa en gimnasios.<br>
 Nota: Tanto quick move como special attack tienen información de cada movimiento: nombre, tipo, base de daño, energía, duración del movimiento(seg).
 
 
